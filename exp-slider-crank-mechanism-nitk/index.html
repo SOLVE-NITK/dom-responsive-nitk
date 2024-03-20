@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE - Mechanics of Machines Lab - Slider Crank Mechanism</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      deferl̥l̥l̥ō
+      src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js"
+    ></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+    ></script>
+<!-- ////////////////////////////////////////////////////////////// -->
+<script type="text/javascript" src= "js/jquery.min.js"></script>
+<script type="text/javascript" src= "js/jquery-ui.min.js"></script>
+<script type="application/json" src='js/jquery.min.map'></script>
+<script type="text/javascript" src= "js/MOMscript.js"></script>
+<script type="text/javascript" src= "js/gauss.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!-- ///////////////////////////////////////////////////////////////////// -->
+    <!--<script defer src="js/script.js"></script>-->
+    <!-- <script defer src="js/newscript.js"></script> -->
+    <script type="text/javascript" src="js/MOMscript.js"></script>
+  </head>
+  <body onload="startsim();varinit();">
+    <div class="title-div-container">
+      <div class="title-div">
+        <div class="logo-div">
+          <a href="#"><img src="images/logo_nitk.png" alt="Logo" class="logo" /></a>
+        </div>
+        <h1>Dynamic Analysis of Slider Crank Mechanism</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="tool-menu">
+          <li class="tool-list">
+            <a href="#simulation" class="tool-link" title="Simulation"
+              ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#089B93"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z"
+                />
+              </svg></a
+              >
+              <span>Simulation</span>
+          </li>
+          <li class="tool-list">
+            <a href="#variables" class="tool-link" title="Variables"
+              ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#ffffff"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#089B93"
+              class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.745 3A23.933 23.933 0 003 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 011.105.402l2.402 7.206a.75.75 0 001.104.401l1.445-.889m-8.25.75l.213.09a1.687 1.687 0 002.062-.617l4.45-6.676a1.688 1.688 0 012.062-.618l.213.09"
+                />
+              </svg></a
+              >
+              <span>Variables</span>
+          </li>
+        
+          <li class="tool-list">
+            <img id="screenchangesbackward" onclick="screenchangeb()" src="images/bluebkdulls.svg"alt="" class="icons" />
+             <span>Prev</span>
+          </li>
+          <li class="tool-list">
+            <img id="screenchangesforward" onclick="screenchangef()" src="images/bluefkwdulls.svg" alt="" class="icons" />
+            <span>Next</span>
+          </li>
+          <li class="tool-list">
+            <img id="playpausebutton" onclick="simstate()" src="images/bluepausedull.svg" alt="" class="icons"/>
+            <span id="playbutton" class="playPause">Pause</span>
+          </li>
+          <li class="tool-list">
+            <img id="rotationbutton" onclick="rotstate()" src="images/bluecwdull.svg" alt="" class="icons" />          
+            <span id="rotate">Rotate</span>
+          </li>
+        
+       
+        </ul>
+      </div>
+      <div class="main">
+        <div class="main-section">
+          <div id="simulation" class="main__task-div">
+            <div class="title-control-div">
+              <h3 class="task-title">Simulation</h3>
+             
+            </div>
+            
+
+              <div class="canvas__div">
+              <div id="canvas-container">
+              <canvas id="simscreen" height="400px" width="550px" ></canvas>
+<!-- ****************************************** -->
+             
+              
+              <div id="titleincanvas"></div> 
+              
+              <div id="datatable1" class="datatable"></div>
+              <div id="datatable2" class="datatable2"></div>
+              <div id="datatable3" class="datatable"></div>
+              <div id="datatable4" class="datatable"></div>
+              <!-- <div id="newComment" > -->
+<!-- *********************************************? -->
+<div id="linkings">
+  <p id="va">V<sub>a</sub></p>
+  <p id="vba">V<sub>ba</sub></p>
+  <p id="vb">V<sub>b</sub></p>
+  
+  <!-- Acceleration Vector Labels -->
+  
+  <p id="aa">A<sub>2cg</sub></p>
+  <p id="aba">A<sub>3cg</sub></p>
+  <p id="ab">A<sub>4cg</sub></p>
+  
+  <!--Inertial Force Vector labels -->
+  
+  <p id="hfl2">F<sub>inl2</sub></p>
+  <p id="hfl3">F<sub>inl3</sub></p>
+  <p id="hfl4">F<sub>inl4</sub></p>
+  
+  
+  <!-- Force Tags -->
+  
+  <p id = "F12">F<sub>12</sub></p>
+  <p id = "F32">F<sub>32</sub></p>
+  <p id = "Finl2">F<sub>in12</sub></p>
+  
+  
+  
+  <p id = "F23">F<sub>23</sub></p>
+  <p id = "F43">F<sub>43</sub></p>
+  <p id = "Finl3">F<sub>inl3</sub></p>
+  
+  
+  <p id = "F14">F<sub>14</sub></p>
+  <p id = "F34">F<sub>34</sub></p>
+  <p id = "Finl4">F<sub>inl4</sub></p>
+  <p id = "Fp">F<sub>p</sub></p>
+  </div>
+  <div id="experiments" class="fontClass">
+    <fieldset>
+    <legend id="expTitle">Choose one of the experiments</legend>
+      <ul type="none">
+        <li><input type="radio" id = "acc" name="expt" value="acc" autocomplete="off" >Experiment on Acceleration of C.G</li>
+        <li><input type="radio" id = "offset" name="expt" value="offset" autocomplete="off">Experiment on Offset Analysis </li>
+        <li><input type="radio" id = "force" name="expt" value="force" autocomplete="off">Experiment on Force </li>
+      </ul>
+    </fieldset>
+    </div>
+    <div id="questionsAcc" class="fontClass">
+      <label for="accSelect">Select Acceleration Axis:
+        <select id="accSelect" onchange="clearText();">
+          <option value="acg2">Acg2</option>
+          <option value="acg3">Acg3</option>
+          <option value="acg4">Acg4</option>
+        </select>
+      </label>
+      <div id="axisPos" class="fontClass">
+        <label for="xAxis" id="lx">X: <input id="xAxis" type="text" oninput="clearSpan();"/><span></span></label>
+        <label for="yAxis" id="ly">Y: <input id="yAxis" type="text" oninput="clearSpan();"/><span></span></label>
+        <label for="check"><input id="check1" type="button" value="CHECK" onclick="evalAcceleration()"/>
+      </div>	
+      </div>
+  <!-- **************************************** -->
+
+              
+               
+              </div>
+
+              <div id="commentboxleft"></div>
+              <div id="commentboxright"></div>
+              <!-- <div id="legendicon" title="Legend" ></div> -->
+              <div id="legend"><img id="legendimg" src="images/legend4BARacc.png"></img></div>
+             
+              </div>
+
+             
+               
+                  
+                    <div id="questionsOffset" class="fontClass">
+<label for="off">Perpendicular distance of the inertial force from the CG point:
+	<select id="offsett" onchange="setZoomOffsetLink(); "  onchange="clearText(); ">
+		<option value="2">OA</option>
+		<option value="3">AB</option>
+		<!-- <option value="4">Link 4</option> -->
+	</select>
+</label>
+<div id="offLink" class="fontClass">
+	<label for="link" id="linkLable" class="fontClass">Offset: <input id="link" type="text" oninput="clearSpan();"/><span id="linkspan">ss</span></label>
+	<label for="check"><input id="check2" type="button" value="CHECK" onclick="evalOffset()"/>
+</div>	
+</div>
+
+
+<div id="questionsForce" class="fontClass">
+  <label for="forceSelect">Select Force or Torque:
+    <select id="forceSelect" onchange="clearText();">
+      <option value="f12">F12</option>
+      <option value="f32">F32</option>
+      <option value="f43">F43</option>
+      <option value="f14">F14</option>
+      <option value="t12">T12</option>
+    </select>
+  </label>
+  <div id="forcAxisPos" class="fontClass">
+    <label for="xForce" id="fx">X: <input id="xForce" type="text" oninput="clearSpan();"/><span id="xfspan"></span></label>
+    <label for="yForce" id="fy">Y: <input id="yForce" type="text" oninput="clearSpan();"/><span id="yfspan"></span></label>
+    <label for="check3"><input id="check3" type="button" value="CHECK" onclick="evalForce()"/>
+  </div>	
+  </div>
+            
+          </div>
+       
+            
+        
+          
+
+
+          <div id="variables" class="main__task-div">
+            <div class="settings-sections">
+              <h3 class="task-title">Variables</h3>
+                <div class="variables-sections">
+
+               
+               
+                  <div id="linklenght1" class="var-div">
+                    <div class="input-container">
+                    <label for="r2spinner"><p title="Link Length">r</p></label>
+                    <input class="var-spinner" id="r2spinner" name="value" />
+                    <span class="mm">mm</span> 
+                    </div>
+                    <div class="var-slider" id="r2slider"></div>
+                    </div>
+                    <div id="linklenght2" class="var-div">
+                      <div class="input-container">
+                      <label for="r3spinner"><p title="Link Length">l</p></label>
+                      <input class="var-spinner" id="r3spinner" name="value" />
+                      <span class="mm">mm</span> 
+                      </div>
+                      <div class="var-slider" id="r3slider"></div>
+                      </div>
+
+                    <div id="linkmass" class="var-div">
+                      <div class="input-container">
+                      <label for="m2spinner"><p title="Link mass">m2</p></label>
+                      <input class="var-spinner" id="m2spinner" name="value" />
+                      <span class="mm">kg</span> 
+                      </div>
+                      <div class="var-slider" id="m2slider"></div>
+                      </div>
+                      <div id="linkmass1" class="var-div">
+                        <div class="input-container">
+                        <label for="m3spinner"><p title="Link mass">m3</p></label>
+                        <input class="var-spinner" id="m3spinner" name="value" />
+                        <span class="mm">kg</span> 
+                        </div>
+                        <div class="var-slider" id="m3slider"></div>
+                        </div>
+                        <div id="linkmass2" class="var-div">
+                          <div class="input-container">
+                          <label for="m4spinner"><p title="Link mass">m4</p></label>
+                          <input class="var-spinner" id="m4spinner" name="value" />
+                          <span class="mm">kg</span> 
+                          </div>
+                          <div class="var-slider" id="m4slider"></div>
+                          </div>
+                          <div id="ex_force_x" class="var-div">
+                            <div class="input-container">
+                            <label for="fpxspinner"><p title="Link mass">fpx</p></label>
+                            <input class="var-spinner" id="fpxspinner" name="value" />
+                            <span class="mm">N</span> 
+                            </div>
+                            <div class="var-slider" id="fpxslider"></div>
+                            </div>
+                            <div id="ex_force_y" class="var-div">
+                              <div class="input-container">
+                              <label for="fpyspinner"><p title="Link mass">fpy</p></label>
+                              <input class="var-spinner" id="fpyspinner" name="value" />
+                              <span class="mm">N</span> 
+                              </div>
+                              <div class="var-slider" id="fpyslider"></div>
+                              </div>
+
+                    <div class="var-div" id = "theta2set">
+                      <div class="input-container">
+                      <label for="theta2spinner"><p title="Link Length">&theta;<sub>2</sub></p></label>
+                      <input class="var-spinner" id="theta2spinner" name="value" />
+                      <span class="mm1">(&deg;) </span> 
+                      </div>
+                      <div class="var-slider" id="theta2slider"></div>
+                      </div>
+
+
+                      <div class="var-div" id = "omega2set">
+                        <div class="input-container">
+                        <label for="omega2spinner"><p title="Link Length">&omega;<sub>2</sub></p></label>
+                        <input class="var-spinner" id="omega2spinner" name="value" />
+                        <span class="mm">(rad/s)</span>
+                      </div>
+                        <div class="var-slider" id="omega2slider"></div>
+                     
+                      </div>
+                      <div class="var-controls">
+                        <img id="tabchangebackward" onclick="tabchangeb()" src="images/bluebkdulls.svg" alt="" class="icons"/>
+                        <img id="tabchangeforward" onclick="tabchangef()" src="images/bluefkwdulls.svg" alt="" class="icons"/>
+                
+                      </div>
+                      
+              </div>
+            </div>
+          </div>
+          
+          <div id="controls" class="main__task-div">
+            <h3 class="task-title">Controls</h3>
+            <div class="settings-sections">
+              <div class="comment-sections">
+              
+                <button id="startExperiment" onclick="setExperiment()">Start Experiment</button>
+                <button id="stopExperiment" onclick="stopExperiment()">Stop Experiment</button>
+                <button id="resetExperiment" onclick="resetExperiment()">Exit Experiment</button>
+               
+                
+
+                
+               
+
+
+
+               
+            </div>
+          </div>
+          </div>
+          <div class="main__task-div footer">
+            <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+          </div>
+          <div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

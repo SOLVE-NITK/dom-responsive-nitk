@@ -1,0 +1,2018 @@
+/* rem and em don not depend on html font size in media queries, Instead 1rem = 1em = 16px
+rem: root font size
+em:current font size
+*/
+
+/* *************only screen******* */
+
+/* **************************** */
+/* Below 1344px (Smaller Desktops) */
+/* **************************** */
+@media (max-width: 1450em) {
+  #simscreen{
+    height: 438px;
+    width: 445px;
+    position: relative;
+    left: 27px;
+  }
+  .circuit-dia img {
+    width: 381px;
+    position: relative;
+    top: 1px;
+    left: -108px;
+  }
+  #fb{
+    position: absolute;
+    left: -212px;
+    top: -25px;
+    font-size: 20px;
+    width: 567px;
+    /* font-family: Comic Sans MS; */
+  }
+  #imgTitle {
+    position: absolute;
+    left: -165px !important;
+    top: -2px;
+    width: 461px;
+    /* font-family: Comic Sans MS; */
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+  }
+  fieldset {
+    width: 140%;
+    height: auto;
+
+  }
+  #questionsSet{
+    position: absolute;
+    left: 12px;
+    top: 387px;
+    width: 362px 
+    
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 60px;
+  }
+  #partImage {
+    position: absolute;
+    height: 337px;
+    left: 189px;
+    top: 62px;
+    width: 275px
+  }
+  #partTitle{
+    position: absolute;
+    width: 77%;
+    left: 303px;
+    top: 39px;
+  }
+  
+  #dropNut {
+    position: absolute;
+    width: 101px;
+    left: 441px;
+    top: 65px;
+  }
+  #dropFrame{
+    position: absolute;
+    width: 84px;
+    left: 445px;
+    top: 109px;
+  }
+  #dropCollar{
+    position: absolute;
+    width: 88px;
+    left: 480px;
+    top: 276px;
+  }
+  #dropRollar{
+    position: absolute;
+    width: 99px;
+    left: 440px;
+    top: 334px;
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 103px;
+    left: 443px;
+    top: 369px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 106px;
+    left: 123px;
+    top: 342px;
+
+  }
+  #dropBevel{
+    position: absolute;
+    width: 77px;
+    left: 115px;
+    top: 290px;
+  }
+  #dropBall{
+    position: absolute;
+    left: 69px;
+    top: 173px;
+    width: 100px;
+  }
+  #dropSpring{
+    position: absolute;
+    left: 135px;
+    top: 131px;
+    width: 100px;
+  }
+  
+  #nut span{
+    position: absolute;
+    left: 71px;
+    top: 0px;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 77%;
+  }
+  #exp {
+    position: relative;
+    left: 3px;
+    top: -13px;
+    font-size: 18px;
+    width: 131%;
+    height: 43%;
+}
+
+}
+@media (max-width: 1200em) {
+  #simscreen{
+    height: 438px;
+    width: 445px;
+    position: relative;
+    left: 27px;
+  }
+  .circuit-dia img {
+    width: 324px;
+    position: relative;
+    top: -1px;
+    left: -108px
+  }
+  #fb{
+    position: absolute;
+    left: -223px;
+    top: -48px;
+    font-size: 20px;
+    width: 567px;
+    /* font-family: Comic Sans MS; */
+  }
+  #imgTitle {
+    position: absolute;
+    left: -173px !important;
+    top: -17px;
+    width: 461px;
+    /* font-family: Comic Sans MS; */
+  }
+  #fb1{
+    position: absolute;
+    left: -178px;
+    top: -47px;
+    font-size: 20px;
+    width: 189px;
+  }
+  #imgTitle1 {
+    position: absolute;
+    left: -160px !important;
+    top: -14px;
+    width: 142px;
+    font-size: 16px;
+  }
+  #myImg1 {
+    width: 341px;
+    position: absolute;
+    margin-left: -147px;
+    top: -3px;
+}
+  
+  fieldset {
+    width: 100%;
+    height: 38%;
+    position: absolute;
+    left: -166px;
+    top: 81px;
+
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 60px;
+  }
+  /* #commentboxleft{
+    width: 85%;
+    left: -304px;
+    top: 41px;
+    position: relative;
+  } */
+  #partImage {
+    position: absolute;
+    height: 259px;
+    left: 189px;
+    top: 62px;
+    width: 260px 
+  }
+  #partTitle{
+    position: absolute;
+    width: 77%;
+    left: 303px;
+    top: 39px;
+  }
+  
+  #dropNut {
+    position: absolute;
+    width: 101px;
+    left: 430px;
+    top: 63px 
+  }
+  #dropFrame{
+    position: absolute;
+    width: 84px;
+    left: 435px;
+    top: 97px;
+  }
+  #dropCollar{
+    position: absolute;
+    width: 88px;
+    left: 463px;
+    top: 225px 
+  }
+  #dropRollar{
+    position: absolute;
+    width: 99px;
+    left: 431px;
+    top: 271px 
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 103px;
+    left: 432px;
+    top: 299px 
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 142px;
+    left: 145px;
+    top: 275px;
+
+  }
+  #dropBevel{
+    position: absolute;
+    width: 169px;
+    left: 74px;
+    top: 234px;
+  }
+  #dropBall{
+    position: absolute;
+    left: 116px;
+    top: 145px;
+    width: 100px;
+  }
+  #dropSpring{
+    position: absolute;
+    left: 159px;
+    top: 113px;
+    width: 100px
+  }
+  
+  #nut span{
+    position: absolute;
+    left: 71px;
+    top: 0px;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 77%;
+  }
+
+  #exp {
+    position: relative;
+    left: -92px;
+    top: 25px;
+    font-size: 18px;
+    width: 140%;
+    height: 408px;
+  }
+  
+  #questionsSet{
+    position: absolute;
+    left: 12px;
+    top: 484px;
+    width: 392px;
+    
+  }
+}
+@media (max-width: 80em) {
+  #simscreen{
+    height: 398px;
+    width: 372px;
+    position: relative;
+    left: 7px;
+    top: 6px;
+     /* margin-left:-94px; */
+  }
+  .circuit-dia img {
+    width: 320px;
+    position: relative;
+    margin-left: -60px;
+    top: 2px;
+  }
+  #fb{
+    position: absolute;
+    left: -211px;
+    top: -48px;
+    font-size: 20px;
+    width: 158%;
+    /* font-family: Comic Sans MS; */
+  }
+  #imgTitle {
+    position: absolute;
+    left: -171px !important;
+    top: -15px;
+    width: 128%;
+    font-size: 16px;
+    /* font-family: Comic Sans MS; */
+  }
+  #fb1{
+    position: absolute;
+    left: -178px;
+    top: -37px;
+    font-size: 20px;
+    width: 189px;
+  }
+  #imgTitle1 {
+    position: absolute;
+    left: -160px !important;
+    top: -13px;
+    width: 142px;
+    font-size: 16px;
+  }
+  #myImg1 {
+    width: 339px;
+    position: absolute;
+    margin-left: -127px;
+    top: -8px;
+  }
+#partImage {
+  position: absolute;
+  height: 260px;
+  left: 137px;
+  top: 62px;
+  width: 240px;
+}
+#partTitle{
+  position: absolute;
+    width: 77%;
+    left: 197px;
+    top: 35px;
+}
+
+#dropNut {
+  position: absolute;
+  width: 101px;
+  left: 365px;
+  top: 62px;
+}
+
+#dropFrame{
+  position: absolute;
+    width: 84px;
+    left: 360px;
+    top: 96px;
+}
+#dropCollar{
+  position: absolute;
+  width: 88px;
+  left: 385px;
+  top: 224px;
+}
+#dropRollar{
+  position: absolute;
+  width: 99px;
+  left: 361px;
+  top: 269px;
+}
+#dropSpindle{
+  position: absolute;
+  width: 103px;
+  left: 359px;
+  top: 295px;
+}
+#dropSleeve{
+  position: absolute;
+    width: 106px;
+    left: 114px;
+    top: 276px;
+}
+#dropBevel{
+  position: absolute;
+  width: 166px;
+  left: 23px;
+  top: 234px;
+}
+#dropBall{
+  position: absolute;
+    left: 45px;
+    top: 146px;
+    width: 100px;
+}
+#dropSpring{
+  position: absolute;
+  left: 101px;
+  top: 115px;
+  width: 100px;
+}
+
+#nut span{
+  position: absolute;
+  left: 71px;
+  top: 0px;
+}
+select {
+  display: inline-block;
+  font-size: 1.2rem;
+  width: 77%;
+}
+  /* label,
+  select,
+  p {
+    display: inline-block;
+    font-size: 16px;
+    width: 65%;
+  } */
+  fieldset {
+    width: 90%;
+    height: 120%;
+  }
+  #exp {
+    position: relative;
+    left: -2px;
+    top: 12px;
+    font-size: 18px;
+    width: 140%;
+    height: 87px;
+  }
+  #questionsSet{
+    position: absolute;
+    left: 11px;
+    top: 467px;
+    width: 374px;
+}
+  }
+/* #commentboxleft1{
+  position: absolute;
+  left: -240px;
+  top: 276px;
+  width: 219%;
+} */
+
+
+/* **************************** */
+/* Below 1200px (Lanscape Tablets) */
+/* **************************** */
+
+@media (max-width: 75em) {
+  body {
+    width: 100%;
+    margin: unset;
+  }
+  .title-div h1 {
+    font-size: 2.5rem;
+  }
+  .task-title {
+    font-size: 2rem;
+  }
+  .tool-menu {
+    font-size: 2rem;
+    gap: 2rem;
+  }
+  .icons {
+    width: 3rem;
+    height: 3rem;
+  }
+  .ctrl-icons {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+  }
+  .div__control img {
+    width: 3rem;
+    height: 2.8rem;
+  }
+  #simscreen{
+    height: 396px;
+    width: 510px;
+    position: relative;
+    left: 12px;
+    top: 6px;
+     /* margin-left:-94px; */
+  }
+
+
+  .circuit-dia img {
+    width: 350px;
+    position: relative;
+    margin-left: -14px;
+    top: 8px;
+  }
+  #fb{
+    position: absolute;
+    left: -54px;
+    top: -36px;
+    font-size: 20px;
+    width: 188px;
+    /* font-family: Comic Sans MS; */
+  }
+  #imgTitle {
+    position: absolute;
+    left: -42px !important;
+    top: -2px;
+    width: 153px;
+    font-size: 16px;
+  }
+  #fb1{
+    position: absolute;
+    left: -178px;
+    top: -39px;
+    font-size: 20px;
+    width: 189px;
+  }
+  #imgTitle1 {
+    position: absolute;
+    left: -160px !important;
+    top: -6px;
+    width: 142px;
+    font-size: 16px;
+  }
+  #myImg1 {
+    width: 336px;
+    position: absolute;
+    margin-left: -147px;
+    top: 6px;
+  }
+
+  fieldset {
+    width: 90%;
+    height: 38%;
+    position: absolute;
+    left: -191px;
+    top: 62px;
+
+  }
+
+  #partImage {
+    position: absolute;
+    height: 294px;
+    left: 221px;
+    top: 62px;
+    width: 262px;
+  }
+  #partTitle{
+    position: absolute;
+    width: 77%;
+    left: 303px;
+    top: 39px;
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 80px;
+  }
+  #dropNut {
+    position: absolute;
+    width: 101px;
+    left: 466px;
+    top: 64px;
+  }
+  #dropFrame{
+    position: absolute;
+    width: 84px;
+    left: 467px;
+    top: 102px;
+  }
+  #dropCollar{
+    position: absolute;
+    width: 88px;
+    left: 505px;
+    top: 249px;
+  }
+  #dropRollar{
+    position: absolute;
+    width: 99px;
+    left: 459px;
+    top: 300px;
+}
+  
+  #dropSpindle{
+    position: absolute;
+    width: 103px;
+    left: 460px;
+    top: 327px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 106px;
+    left: 200px;
+    top: 305px;
+  }
+  #dropBevel{
+    position: absolute;
+    width: 164px;
+    left: 110px;
+    top: 261px;
+}
+  #dropBall{
+    position: absolute;
+    left: 132px;
+    top: 157px;
+    width: 100px 
+  }
+  #dropSpring{
+    position: absolute;
+    left: 193px;
+    top: 123px;
+    width: 100px;
+}
+  
+  #nut span{
+    position: absolute;
+    left: 71px;
+    top: 0px;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 77%;
+  }
+ 
+  fieldset {
+    width: 90%;
+    height: 120%;
+  }
+  #exp {
+    position: relative;
+    left: -34px;
+    top: 0px;
+    font-size: 18px;
+    width: 127%;
+    height: 90px;
+  }
+  #questionsSet{
+    position: absolute;
+    left: 11px;
+    top: 476px;
+    width: 93%;
+    
+  }
+}
+
+/* **************************** */
+/* Below 944px ( Tablets) */
+/* **************************** */
+
+@media (max-width: 59em) {
+  .tool-link:link,
+  .tool-link:visited {
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    flex-direction: column;
+  }
+
+  #simscreen{
+    height: 374px;
+    width: 489px;
+    position: relative;
+    left: 286px;
+    top: 3px;
+     /* margin-left:-94px; */
+  }
+  .circuit-dia img {
+    width: 377px;
+    position: relative;
+    margin-left: 229px;
+    top: 23px;
+  }
+  #fb{
+    position: absolute;
+    left: 167px;
+    top: -36px;
+    font-size: 20px;
+    width: 242px;
+    /* font-family: Comic Sans MS; */
+  }
+  #imgTitle {
+    position: absolute;
+    left: -99px !important;
+    top: 0px;
+    width: 128%;
+    font-size: 16px;
+    /* font-family: Comic Sans MS; */
+  }
+  #fb1{
+    position: absolute;
+    left: -157px;
+    top: -417px;
+    font-size: 20px;
+    width: 158%;
+  }
+  #imgTitle1 {
+    position: absolute;
+    left: -67px !important;
+    top: -377px;
+    width: 128%;
+    font-size: 16px;
+  }
+  #myImg1 {
+    width: 413px;
+    position: absolute;
+    margin-left: 224px;
+    top: -350px;
+  }
+
+  fieldset {
+    width: 90%;
+    height: 120%;
+  }
+  #exp {
+    position: relative;
+    left: 328px;
+    top: -265px;
+    font-size: 18px;
+    width: 75%;
+    height: 101px;
+  }
+  .copytext {
+    margin-bottom: 65px;
+  }
+
+  .title-div h1 {
+    font-size: 2rem;
+  }
+
+  .main__task-div {
+    height: auto;
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 160px;
+  }
+
+  .sidebar {
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    backdrop-filter: blur(10rem);
+    z-index: 101;
+    justify-content: space-evenly;
+    border-radius: 0;
+    scroll-behavior: auto;
+  }
+  .tool-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 100%;
+    font-size: 2.4rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .logo-div {
+    width: 6.5rem;
+  }
+  .icons {
+    width: 3rem;
+    height: 3rem;
+  }
+  .tool-list span {
+    font-size: 1rem;
+  }
+  .main__task-div:nth-child(4) {
+    margin-bottom: 6rem;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 275px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  #partImage {
+    position: absolute;
+    height: 343px;
+    left: 245px;
+    top: 76px;
+    width: 279px;
+  }
+  #partTitle{
+    position: absolute;
+    width: 77%;
+    left: 303px;
+    top: 44px;
+  }
+
+  #dropNut {
+    position: absolute;
+    width: 101px;
+    left: 503px;
+    top: 79px;
+  }
+  #dropFrame{
+    position: absolute;
+    width: 84px;
+    left: 504px;
+    top: 126px;
+  }
+  #dropCollar{
+    position: absolute;
+    width: 88px;
+    left: 536px;
+    top: 295px;
+  }
+  #dropRollar{
+    position: absolute;
+    width: 99px;
+    left: 498px;
+    top: 354px;
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 103px;
+    left: 503px;
+    top: 388px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 106px;
+    left: 245px;
+    top: 363px;
+  }
+  #dropBevel{
+    position: absolute;
+    width: 77px;
+    left: 201px;
+    top: 307px 
+}
+  
+  #dropBall{
+    position: absolute;
+    left: 157px;
+    top: 191px;
+    width: 100px
+  }
+  #dropSpring{
+    position: absolute;
+    left: 223px;
+    top: 150px;
+    width: 100px;
+  }
+  #nut span{
+    position: absolute;
+    left: 71px;
+    top: 0px;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 77%;
+  }
+  #questionsSet{
+    position: absolute;
+    left: 11px;
+    top: 596px;
+    width: 322px;
+    
+  }}
+  /* label,
+  select,
+  p {
+    display: inline-block;
+    font-size: 16px;
+    width: 65%;
+  } */
+  /* #commentboxleft1{
+    position: absolute;
+    left: -10px;
+    top: 185px;
+    width: 219%;
+  } */
+
+
+/* **************************** */
+/* Below 820px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 48em) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  #simscreen{
+    height: 382px;
+    width: 568px;
+    position: relative;
+    left: 228px;
+    top: 3px;
+     /* margin-left:-94px; */
+  }
+  .circuit-dia img {
+    width: 362px;
+    position: relative;
+    margin-left: 264px;
+    top: 11px;
+  }
+  #fb{
+    position: absolute;
+    left: -174px;
+    top: -40px;
+    font-size: 20px;
+    width: 158%;
+    /* font-family: Comic Sans MS; */
+  }
+  #imgTitle {
+    position: absolute;
+    left: -83px !important;
+    top: -4px;
+    width: 128%;
+    font-size: 16px;
+    /* font-family: Comic Sans MS; */
+  }
+  #fb1{
+    position: absolute;
+    left: -166px;
+    top: -416px;
+    font-size: 20px;
+    width: 158%;
+}
+  
+  
+  #imgTitle1 {
+    position: absolute;
+    left: -74px !important;
+    top: -378px;
+    width: 128%;
+    font-size: 16px;
+  }
+  #myImg1 {
+    width: 419px;
+    position: absolute;
+    margin-left: 224px;
+    top: -337px;
+  }
+
+  fieldset {
+    width: 90%;
+    height: 120%;
+  }
+  #exp {
+    position: relative;
+    left: 68px;
+    top: 33px;
+    font-size: 18px;
+    width: 75%;
+    height: 301px;
+  }
+  .copytext {
+    margin-bottom: 75px;
+  }
+
+  fieldset {
+    width: 90%;
+    height: 38%;
+    position: absolute;
+    left: 39px;
+    top: -137px;
+
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 145px;
+  }
+  /* #commentboxleft{
+    width: 250%;
+    left: -557px;
+    top: -3px;
+    position: relative;
+  } */
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 200px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  .tool-list span {
+    font-size: 1.6rem;
+  }
+  #partImage {
+    position: absolute;
+    height: 302px;
+    left: 244px;
+    top: 71px;
+    width: 252px 
+  }
+  #partTitle{
+    position: absolute;
+    width: 77%;
+    left: 276px;
+    top: 44px;
+  }
+
+  #dropNut {
+    position: absolute;
+    width: 101px;
+    left: 471px;
+    top: 72px;
+  }
+  #dropFrame{
+    position: absolute;
+    width: 84px;
+    left: 469px;
+    top: 113px;
+  }
+  #dropCollar{
+    position: absolute;
+    width: 88px;
+    left: 499px;
+    top: 261px;
+  }
+  #dropRollar{
+    position: absolute;
+    width: 99px;
+    left: 461px;
+    top: 314px;
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 103px;
+    left: 458px;
+    top: 343px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 85px;
+    left: 264px;
+    top: 320px;
+  }
+  #dropBevel{
+    position: absolute;
+    width: 77px;
+    left: 189px;
+    top: 272px;
+}
+  
+  #dropBall{
+    position: absolute;
+    left: 167px;
+    top: 171px;
+    width: 100px;
+  }
+  #dropSpring{
+    position: absolute;
+    left: 221px;
+    top: 133px;
+    width: 100px;
+  }
+  #nut span{
+    position: absolute;
+    left: 71px;
+    top: 0px;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 77%;
+  }
+  #questionsSet{
+    position: absolute;
+    left: 11px;
+    top: 578px;
+    width: 313px;
+    
+  }
+}
+  /* label,
+  select,
+  p {
+    display: inline-block;
+    font-size: 16px;
+    width: 65%;
+  } */
+  /* #commentboxleft1{
+    position: absolute;
+    left: -91px;
+    top: 185px;
+    width: 219%;
+  } */
+
+
+/* **************************** */
+/* Below 704px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 44em) {
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .img-div {
+    flex-direction: column;
+  }
+  .title-div {
+    gap: 0rem;
+    text-align: center;
+  }
+  .round {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .logo-div {
+    width: 6.5rem;
+  }
+  .main__task-div:nth-child(4) {
+    margin-bottom: 6rem;
+  }
+  .circuit-dia {
+    width: 40%;
+  }
+  .cross-img {
+    width: 60%;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 150px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  #simscreen{
+    height: 340px;
+    width: 447px;
+    position: relative;
+    left: 230px;
+    top: -2px;
+     /* margin-left:-94px; */
+  }
+  .circuit-dia img {
+    width: 377px;
+    position: relative;
+    margin-left: 70px;
+    top: -41px;
+  }
+  #fb{
+    position: absolute;
+    left: -52px;
+    top: -81px;
+    font-size: 20px;
+    width: 158%;
+    /* font-family: Comic Sans MS; */
+  }
+  #imgTitle {
+    position: absolute;
+    left: -13px !important;
+    top: -46px;
+    width: 128%;
+    font-size: 16px;
+    /* font-family: Comic Sans MS; */
+  }
+  #fb1{
+    position: absolute;
+    left: -38px;
+    top: -414px;
+    font-size: 20px;
+    width: 158%;
+  
+  }
+  #imgTitle1 {
+    position: absolute;
+    left: -10px !important;
+    top: -374px;
+    width: 128%;
+    font-size: 16px;
+  }
+  #myImg1 {
+    width: 437px;
+    position: absolute;
+    margin-left: 30px;
+    top: -346px;
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 100px;
+  }
+  /* div#commentboxleft
+{
+	border-top-style: dotted;
+	border-top-width: 2px;
+	border-top-color: #f6ebed;
+	position:absolute;
+	left:18px;
+	top:693px;
+	height: 65px;
+	width: 310px;
+	text-align: left;
+	font-size: 15px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+} */
+  fieldset {
+    width: 90%;
+    height: 120%;
+  }
+  #exp {
+    position: relative;
+    left: 60px;
+    top: -55px;
+    font-size: 18px;
+    width: 79%;
+    height: 93px;
+  }
+
+  #partImage {
+    position: absolute;
+    height: 309px;
+    left: 162px;
+    top: 77px;
+    width: 253px;
+  }
+  #partTitle{
+    position: absolute;
+    width: 77%;
+    left: 225px;
+    top: 44px;
+  }
+
+  #dropNut {
+    position: absolute;
+    width: 101px;
+    left: 390px;
+    top: 78px;
+  }
+  #dropFrame{
+    position: absolute;
+    width: 84px;
+    left: 395px;
+    top: 120px;
+  }
+  #dropCollar{
+    position: absolute;
+    width: 88px;
+    left: 431px;
+    top: 274px;
+  }
+  #dropRollar{
+    position: absolute;
+    width: 99px;
+    left: 398px;
+    top: 327px;
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 103px;
+    left: 397px;
+    top: 358px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 106px;
+    left: 129px;
+    top: 334px;
+  }
+  #dropBevel{
+    position: absolute;
+    width: 167px;
+    left: 47px;
+    top: 283px;
+  }
+  #dropBall{
+    position: absolute;
+    left: 83px;
+    top: 179px;
+    width: 100px;
+}
+  
+  #dropSpring{
+    position: absolute;
+    left: 201px;
+    top: 134px;
+    width: 100px;
+  }
+  #nut span{
+    position: absolute;
+    left: 71px;
+    top: 0px;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 77%;
+  }
+  #questionsSet{
+    position: absolute;
+    left: 11px;
+    top: 621px;
+    width: 322px 
+    
+  }
+  .copytext {
+    margin-bottom: 75px;
+  }
+
+}
+
+@media (max-width: 36em) {
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  #simscreen{
+    height: 340px;
+    width: 447px;
+    position: relative;
+    left: 164px;
+    top: -2px;
+  }
+  .circuit-dia img {
+    width: 360px;
+    position: relative;
+    margin-left: 60px;
+    top: -32px;
+  }
+  #fb{
+    position: absolute;
+    left: -50px;
+    top: -73px;
+    font-size: 20px;
+    width: 158%;
+    /* font-family: Comic Sans MS; */
+  }
+  #imgTitle {
+    position: absolute;
+    left: -23px !important;
+    top: -39px;
+    width: 128%;
+    font-size: 16px;
+    /* font-family: Comic Sans MS; */
+  }
+  #fb1{
+    position: absolute;
+    left: -35px;
+    top: -404px;
+    font-size: 20px;
+    width: 158%;
+  
+  }
+  #imgTitle1 {
+    position: absolute;
+    left: -8px !important;
+    top: -366px;
+    width: 128%;
+    font-size: 16px;
+  }
+  #myImg1 {
+    width: 167%;
+    position: absolute;
+    margin-left: 68px;
+    top: -321px;
+  }
+  fieldset {
+    width: 90%;
+    height: 120%;
+  }
+  #exp {
+    position: relative;
+    left: 52px;
+    top: -43px;
+    font-size: 18px;
+    width: 79%;
+    height: 93px;
+  }
+  /* #fb{
+    position: absolute;
+    left: -50px;
+    top: -87px;
+    font-size: 20px;
+    width: 158%;
+    font-family: Comic Sans MS;
+  } */
+
+  #partImage {
+    position: absolute;
+    height: 245px;
+    left: 158px;
+    top: 99px;
+    width: 183px;
+  }
+  #partTitle{
+    position: absolute;
+    width: 77%;
+    left: 185px;
+    top: 44px;
+  }
+  .copytext {
+    margin-bottom: 70px;
+  }
+  /* #dropNut{
+    position: absolute;
+    top: -277px;
+      left: 226px;
+  } */
+  /* 
+  
+  /* #imgTitle{
+    position: absolute;
+    left: -5px;
+    top: -51px;
+    width: 111%;
+    font-size: 15px;
+    font-family: Comic Sans MS;
+  } */
+  /* #commentboxleft{
+    width: 250%;
+    left: -157px;
+    top: -3px;
+    position: relative;
+  } */
+  .img-div {
+    flex-direction: column;
+  }
+  .title-div {
+    gap: 0rem;
+    text-align: center;
+  }
+  .round {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .logo-div {
+    width: 6.5rem;
+  }
+  .main__task-div:nth-child(4) {
+    margin-bottom: 6rem;
+  }
+  .circuit-dia {
+    width: 40%;
+  }
+  .cross-img {
+    width: 60%;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 150px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  #dropNut {
+    position: absolute;
+    width: 101px;
+    left: 329px;
+    top: 99px;
+  }
+  #dropFrame{
+    position: absolute;
+    width: 84px;
+    left: 331px;
+    top: 131px;
+  }
+  #dropCollar{
+    position: absolute;
+    width: 88px;
+    left: 352px;
+    top: 251px 
+  }
+  #dropRollar{
+    position: absolute;
+    width: 99px;
+    left: 329px;
+    top: 297px;
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 103px;
+    left: 328px;
+    top: 318px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 106px;
+    left: 112px;
+    top: 298px;
+  }
+  #dropBevel{
+    position: absolute;
+    width: 162px;
+    left: 37px;
+    top: 259px;
+  }
+  #dropBall{
+    position: absolute;
+    left: 69px;
+    top: 178px;
+    width: 100px;
+  }
+  #dropSpring{
+    position: absolute;
+    left: 116px;
+    top: 147px;
+    width: 100px;
+  }
+  #nut span{
+    position: absolute;
+    left: 71px;
+    top: 0px;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 77%;
+  }
+  #questionsSet{
+    position: absolute;
+    left: 14px;
+    top: 554px;
+    width: 311px;
+    /* line-height: 46px;  */
+    
+  }
+  /* div#commentboxleft
+{
+	border-top-style: dotted;
+	border-top-width: 2px;
+	border-top-color: #f6ebed;
+	position:absolute;
+	left:18px;
+	top:614px;
+	height: 65px;
+	width: 310px;
+	text-align: left;
+	font-size: 15px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+} */
+  /* label,
+  select,
+  p {
+    display: inline-block;
+    font-size: 16px;
+    width: 65%;
+  } */
+  /* #commentboxleft1{
+    position: absolute;
+    left: 2px;
+    top: 185px;
+    width: 219%;
+  } */
+}
+/* **************************** */
+/* Below 540px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 34em) {
+  /* .container {
+    padding: 0.5rem;
+    gap: 1rem;
+  } */
+#simscreen{
+  height: 335px;
+  width: 521px;
+  position: absolute;
+  left: 84px;
+  top: 35px;
+}
+.circuit-dia img {
+  width: 358px;
+  position: relative;
+  margin-left: 31px;
+  top: -28px;
+}
+#fb{
+  position: absolute;
+  left: -27px;
+  top: -79px;
+  font-size: 20px;
+  width: 158%;
+
+}
+#imgTitle {
+  position: absolute;
+  left: -4px !important;
+  top: -44px;
+  width: 128%;
+  font-size: 16px;
+  /* font-family: Comic Sans MS; */
+}
+#fb1{
+  position: absolute;
+  left: -44px;
+  top: -414px;
+  font-size: 20px;
+  width: 158%;
+
+}
+#imgTitle1 {
+  position: absolute;
+  left: -26px !important;
+  top: -373px;
+  width: 128%;
+  font-size: 16px;
+}
+#myImg1 {
+  width: 361px;
+  position: absolute;
+  margin-left: 1px;
+  top: -345px;
+}
+
+#questionsSet{
+  position: absolute;
+    left: 11px;
+    top: 547px;
+    width: 300px 
+}
+  
+
+fieldset {
+  width: 116%;
+  height: auto;
+}
+#exp {
+position: relative;
+    left: -23px;
+    top: -24px;
+    font-size: 18px;
+    /* width: 79%; */
+}
+#partImage {
+  position: absolute;
+  height: 245px;
+  left: 80px;
+  top: 91px;
+  width: 183px;
+}
+#partTitle{
+  position: absolute;
+  width: 77%;
+  left: 111px;
+  top: 44px;
+}
+#expTitle, #calc, #gParts {
+  margin-left: 62px;
+}
+
+  .title-div h1 {
+    /* padding: 0.2rem; */
+
+    font-size: 1.6rem;
+    /* text-align: center; */
+  }
+
+  .logo-div {
+    width: 4.5rem;
+  }
+  .div__control {
+    gap: 2rem;
+    /* top: 1.8rem;
+    right: 1.5rem; */
+  }
+  .ctrl-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .tool-menu {
+    gap: 1.5rem;
+  }
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .task-title {
+    font-size: 1.7rem;
+  }
+  /* label,
+  select,
+  input,
+  p {
+    display: inline-block;
+    font-size: 1.5rem;
+  } */
+  #dropNut {
+    position: absolute;
+    width: 101px;
+    left: 250px;
+    top: 90px;
+  }
+  #dropFrame{
+    position: absolute;
+    width: 84px;
+    left: 243px;
+    top: 122px;
+  }
+  #dropCollar{
+    position: absolute;
+    width: 88px;
+    left: 267px;
+    top: 244px;
+  }
+  #dropRollar{
+    position: absolute;
+    width: 99px;
+    left: 248px;
+    top: 286px;
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 103px;
+    left: 244px;
+    top: 310px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 106px;
+    left: 40px;
+    top: 290px;
+  }
+  #dropBevel{
+    position: absolute;
+    width: 77px;
+    left: 28px;
+    top: 251px;
+  }
+  #dropBall{
+    position: absolute;
+    left: 2px;
+    top: 170px;
+    width: 100px;
+  }
+  #dropSpring{
+    position: absolute;
+    left: 40px;
+    top: 139px;
+    width: 100px;
+  }
+  #nut span{
+    position: absolute;
+    left: 71px;
+    top: 0px;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 72%;
+  }
+  /* label,
+  select,
+  p {
+    display: inline-block;
+    font-size: 16px;
+    width: 65%;
+  } */
+  
+  .main {
+    gap: 0.5rem;
+  }
+  .main-section {
+    gap: 0.5rem;
+  }
+  .sidebar {
+    border-radius: 0;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 120px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  .div__control img {
+    width: 2.7rem;
+    height: 2.5rem;
+  }
+  .tooltip {
+    font-size: 1rem;
+  }
+
+  .p {
+    margin-bottom: 65px;
+  }
+
+}
+
+@media (max-width: 24em) {
+  /* #comments{
+    width:200px;
+  } */
+  #simscreen{
+    height: 285px;
+    width: 359px;
+    position: absolute;
+    left: 68px;
+    top: 35px;
+     /* margin-left:-94px; */
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 95px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  fieldset {
+    width: 116%;
+    height: auto;
+  }
+  #exp {
+    position: relative;
+    left: -36px;
+    top: -24px;
+    font-size: 18px;
+    width: 257px;
+    /* width: 79%; */
+  }
+  #dropNut {
+    position: absolute;
+    width: 88px;
+    left: 209px;
+    top: 97px;
+  }
+  #dropFrame{
+    position: absolute;
+    width: 84px;
+    left: 211px;
+    top: 123px;
+  }
+  #dropCollar{
+    position: absolute;
+    width: 88px;
+    left: 221px;
+    top: 205px;
+  }
+  #dropRollar{
+    position: absolute;
+    width: 99px;
+    left: 209px;
+    top: 238px;
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 103px;
+    left: 209px;
+    top: 258px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 106px;
+    left: 26px;
+    top: 241px;
+  }
+  #dropBevel{
+    position: absolute;
+    width: 77px;
+    left: 18px;
+    top: 215px;
+  }
+  #dropBall{
+    position: absolute;
+    left: 6px;
+    top: 154px;
+    width: 100px;
+  }
+  #dropSpring{
+    position: absolute;
+    left: 30px;
+    top: 133px;
+    width: 100px;
+  }
+  #nut span{
+    position: absolute;
+    left: 71px;
+    top: 0px;
+  }
+  .circuit-dia img {
+    width: 324px;
+    position: relative;
+    margin-left: 10px;
+    top: -39px;
+  }
+  #fb{
+    position: absolute;
+    left: -43px;
+    top: -109px;
+    font-size: 20px;
+    width: 158%;
+  }
+  #imgTitle {
+    position: absolute;
+    left: -20px !important;
+    top: -67px;
+    width: 128%;
+    font-size: 16px;
+  }
+  #fb1{
+    position: absolute;
+    left: -41px;
+    top: -418px;
+    font-size: 20px;
+    width: 158%;
+  
+  }
+  #imgTitle1 {
+    position: absolute;
+    left: -27px !important;
+    top: -383px;
+    width: 128%;
+    font-size: 16px;
+  }
+  #myImg1 {
+    width: 304px;
+    position: absolute;
+    margin-left: 11px;
+    top: -337px;
+
+  }
+  #partImage {
+    position: absolute;
+    width: 148px;
+    height: 173px;
+    left: 72px;
+    top: 103px;
+  }
+  #partTitle{
+    position: absolute;
+    width: 77%;
+    left: 61px;
+    top: 44px;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 72%;
+  }
+  .comment-sections {
+    padding: 1rem 1rem 8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+/* .copytext {
+  margin-bottom: 70px;
+} */
+.p {
+  margin-bottom: 70px;
+}
+#questionsSet{
+  position: absolute;
+  left: 11px;
+  top: 508px;
+  width: 300px;
+  
+}
+#expTitle, #calc, #gParts {
+  margin-left: 32px;
+}
+}
+
+
+/* 
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
