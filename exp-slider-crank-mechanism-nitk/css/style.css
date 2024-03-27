@@ -524,7 +524,17 @@ div#experiments{
 div#commentboxleft {
   position: absolute;
   left: 16px;
-  top: 523px;
+  top: 507px;
+  height: 65px;
+  width: 285px;
+  text-align: left;
+  font-size: 16px;
+  
+}
+div#commentboxleft1 {
+  position: absolute;
+  left: 16px;
+  top: 507px;
   height: 65px;
   width: 285px;
   text-align: left;
@@ -557,7 +567,7 @@ div#newComment{
 
 #questionsAcc,#questionsOffset,#questionsForce{
   position: absolute;
-  top: 50rem;
+  top: 42rem;
   left: 1rem;
 }
 #startExperiment ,#stopExperiment ,#resetExperiment {

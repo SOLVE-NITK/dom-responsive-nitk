@@ -25,7 +25,7 @@ em:current font size
   }
   #commentboxright{
     top: 0px;
-    margin-left: -150px;
+    margin-left: -160px;
   }
   .canvas {
     display: block;
@@ -94,7 +94,7 @@ em:current font size
   }
   #commentboxcorrect{
     top: 430px;
-    margin-left: -565px;
+    margin-left: -732px;
   }
   #commentboxleft{
     top: -30px;
@@ -106,7 +106,7 @@ em:current font size
   }
   #commentboxright{
     top: -30px;
-    margin-left: -5px;
+    margin-left: -257px;
   }
   #simscreen {
     margin-left: 190px;

@@ -974,6 +974,7 @@ if(screenchanges==0)
     "pointer-events": "auto"
   }); 
     printcomment("",1);
+    document.getElementById("commentboxleft1").innerHTML = "";
     printcomment("Navigate to various other pages through the buttons",2);
 }
 
@@ -1015,6 +1016,7 @@ else if(screenchanges==1)
       "opacity": 1,
       "pointer-events": "auto"
     }); 
+    document.getElementById("commentboxleft1").innerHTML = "";
   printcomment("A2cg=Acceleration of CG of link 2<br>A4cg=Acceleration of CG of link 4<br>A3cg=Acceleration of CG of link 3",1);
 //   printcomment("Navigate to various other pages through the buttons",2);
 }
@@ -1055,7 +1057,7 @@ else if(screenchanges==2)
       "pointer-events": "auto"
     }); 
   draw3();
-
+  document.getElementById("commentboxleft1").innerHTML = "";
  printcomment("Finl2=Inertial Force acting on Link 2<br>Finl3 = Inertial Force acting on Link 3<br>Finl4 = Inertial Force acting on Link 4",1);
 //  printcomment("Navigate to various other pages through the buttons",2);
 }
@@ -1074,7 +1076,8 @@ if ($(window).width() < 944) {
   }
 draw();
 drawdyn(ctx);
-printcomment("Respective x and y components of<br> forces in datatable",1);
+document.getElementById("commentboxleft1").innerHTML = "Respective x and y components of<br> forces in datatable";
+// printcomment("",1);
 // printcomment("Navigate to various other pages through the buttons",2);
 $('#simscreen').show(); 
     $('#experiments').hide(); 
@@ -1102,7 +1105,8 @@ $('#simscreen').show();
 
 }
 else if(screenchanges == 4) {
-
+  // printcomment("",4);
+  document.getElementById("commentboxleft1").innerHTML = "";
 	if(exptSelected == 0)
 	{
 		$("#simscreen").hide();
@@ -1721,15 +1725,15 @@ document.getElementById("datatable1").innerHTML="\
 
 
 if(scaleP>=1)
-  ctx.fillText("Free Body Diagram of Link 4 (Scale = 2)",230,250);
+  ctx.fillText("Free Body Diagram of Link 4 (Scale = 2)",130,230);
   if(scaleP<1)
-  ctx.fillText("Free Body Diagram of Link 4 (Scale = 2)",230,250);
+  ctx.fillText("Free Body Diagram of Link 4 (Scale = 2)",130,230);
 
 
 if(scaleP>=1)
-  ctx.fillText("Free Body Diagram of Link 3 (Scale = 1)",250,385);
+  ctx.fillText("Free Body Diagram of Link 3 (Scale = 1)",230,265);
   if(scaleP<1)
-  ctx.fillText("Free Body Diagram of Link 3 (Scale = 1)",250,385);
+  ctx.fillText("Free Body Diagram of Link 3 (Scale = 1)",230,265);
 
 //Dynamic Force Free Body Diagram
 

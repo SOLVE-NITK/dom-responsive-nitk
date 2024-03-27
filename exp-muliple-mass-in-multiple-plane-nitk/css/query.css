@@ -35,10 +35,12 @@ em:current font size
     position: relative;
     left: -240px;
     top: 22px;
+  
   }
   #commentboxright{
     position: relative;
     left: 7px;
+   
  
     
   }
@@ -57,6 +59,17 @@ em:current font size
   margin-left: 28px;
  
 }
+}
+
+@media (max-width: 78em){
+  #variables{
+    width: 190%;
+  }
+  #commentboxleft{
+    margin-left: -31px;
+    
+  }
+ 
 }
 
 
@@ -203,9 +216,10 @@ em:current font size
 }
 
   #commentboxcorrect{
-    position: relative;
-    left: 100px;
+    /* position: relative; */
+    left: 67px;
     top: -10px;
+    
   }
   #commentboxleft{
     position: relative;
@@ -321,11 +335,7 @@ em:current font size
   .copytext{
     margin-bottom: 65px;
   }
-  #commentboxcorrect{
-    position: relative;
-    left: 100px;
-    top: -10px;
-  }
+
   #commentboxleft{
     position: relative;
     left: 100px;
@@ -346,7 +356,7 @@ em:current font size
   }
   #commentboxcorrect{
     position: relative;
-    left: 40px;
+    left: 11px;
     top: -10px;
   }
   #commentboxleft{
@@ -414,7 +424,7 @@ em:current font size
   }
   #commentboxleft{
     position: relative;
-    left: 20px;
+    left: 48px;
   }
   #commentboxright{
     position: relative;
@@ -502,7 +512,7 @@ em:current font size
   }
   #commentboxleft{
     position: relative;
-    left: 5px;
+    left: 37px;
     font-size: 15px;
   }
   #commentboxright{
@@ -554,7 +564,7 @@ em:current font size
   #commentboxleft{
 
     position: relative;
-    left: 10px;
+    left: 40px;
     top: -50px;
     font-size: 13px;
   

@@ -94,6 +94,7 @@ function simstate() {
     simstatus = 1;
     $("#theta1spinner").spinner("value", theta); //to set simulation parameters on pause
     pauseTime = setInterval("varupdate();", "100");
+    document.querySelector(".playPause").textContent = "Play";
     drawrem(ctx);
   }
   if (imgfilename == "blueplaydull") {
@@ -101,6 +102,7 @@ function simstate() {
     clearInterval(pauseTime);
     document.getElementById("playpausebutton").src = "images/bluepausedull.svg";
     simTimeId = setInterval("time=time+0.1; varupdate(); ", "100");
+    document.querySelector(".playPause").textContent = "Pause";
     simstatus = 0;
   }
 }

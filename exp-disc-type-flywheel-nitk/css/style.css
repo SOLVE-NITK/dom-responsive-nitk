@@ -152,6 +152,7 @@ h1 {
 .main {
   width: 100%;
   display: flex;
+  overflow-y: scroll;
   flex-direction: column;
   gap: 0.5rem;
 }
@@ -184,8 +185,8 @@ h1 {
   /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: 50fr 50fr;
   gap: 0.5rem;
-  overflow-y: auto;
-  overflow: hidden;
+  overflow-y: auto; 
+  overflow: hidden; 
   scroll-behavior: smooth;
   padding: 0 0.5rem 0 0;
 }
@@ -382,6 +383,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
+  min-height: 13em;
 }
 
 /* .variables-sections, */
@@ -432,7 +434,7 @@ h1 {
 }
 #moiDiv1{
   position: relative;
-  left: 27px;
+  left: -2px;
   width: 243px;
 }
 #momentofinertia1{

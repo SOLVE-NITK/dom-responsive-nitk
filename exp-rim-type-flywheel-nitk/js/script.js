@@ -106,6 +106,7 @@ function simstate()
 	 clearInterval(simTimeId);
     simstatus=1;
 	speedString = "Speed:2x";
+	document.querySelector(".playPause").textContent="Play";
     pauseTime=setInterval("varupdate();",'100');
   }
     if (imgfilename=="blueplaydull")
@@ -115,6 +116,7 @@ function simstate()
 	speedString = "Speed:2x";
     document.getElementById('playpausebutton').src="images/bluepausedull.svg";
     simTimeId=setInterval("time=time+rate; varupdate(); ",speed);    
+	document.querySelector(".playPause").textContent="Pause";
     simstatus=0;
   } 
 }

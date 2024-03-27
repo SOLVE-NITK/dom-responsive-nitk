@@ -1086,7 +1086,7 @@ select {
   #dropSleeve{
     position: absolute;
     width: 85px;
-    left: 264px;
+    left: 242px;
     top: 320px;
   }
   #dropBevel{
@@ -1325,8 +1325,8 @@ select {
   
   #dropSpring{
     position: absolute;
-    left: 201px;
-    top: 134px;
+    left: 139px;
+    top: 142px;
     width: 100px;
   }
   #nut span{

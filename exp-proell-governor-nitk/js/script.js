@@ -182,7 +182,7 @@ draw();//This function draws the contents on the canvas
 let mediaQuery1 = window.matchMedia("screen and (max-width: 540px)");
 let mediaQuery2 = window.matchMedia("screen and (max-width: 704px)");
 let mediaQuery3 = window.matchMedia("screen and (max-width: 820px)");
-let mediaQuery4 = window.matchMedia("screen and (max-width: 950px)");
+let mediaQuery4 = window.matchMedia("screen and (max-width: 943px)");
 let mediaQuery5 = window.matchMedia("screen and (max-width: 1200px)");
 let scaleX = 0.5;
 let scaleY = 0.5;
