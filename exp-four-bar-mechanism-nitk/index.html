@@ -184,8 +184,8 @@
                     </select>
                   </label>
                   <div id="axisPos" class="fontClass">
-                    <label for="xAxis" id="lx">X: <input id="xAxis" type="text" oninput="clearSpan();"/><span></span></label>
-                    <label for="yAxis" id="ly">Y: <input id="yAxis" type="text" oninput="clearSpan();"/><span></span></label>
+                    <label for="xAxis" id="lx">X: <input id="xAxis" type="number" oninput="clearSpan();"/><span></span></label>
+                    <label for="yAxis" id="ly">Y: <input id="yAxis" type="number" oninput="clearSpan();"/><span></span></label>
                     <label for="check"><input id="check1" type="button" value="CHECK" onclick="evalAcceleration()"/>
                   </div>	
                   </div>
@@ -198,7 +198,7 @@
                       </select>
                     </label>
                     <div id="offLink" class="fontClass">
-                      <label for="link" id="linkLable" class="fontClass">Offset: <input id="link" type="text" oninput="clearSpan();"/><span id="linkspan">ss</span></label>
+                      <label for="link" id="linkLable" class="fontClass">Offset: <input id="link" type="number" oninput="clearSpan();"/><span id="linkspan">ss</span></label>
                       <label for="check"><input id="check2" type="button" value="CHECK" onclick="evalOffset()"/>
                     </div>	
                     </div>
@@ -213,8 +213,8 @@
                         </select>
                       </label>
                       <div id="forcAxisPos" class="fontClass">
-                        <label for="xForce" id="fx">X: <input id="xForce" type="text" oninput="clearSpan();"/><span id="xfspan"></span></label>
-                        <label for="yForce" id="fy">Y: <input id="yForce" type="text" oninput="clearSpan();"/><span id="yfspan"></span></label>
+                        <label for="xForce" id="fx">X: <input id="xForce" type="number" oninput="clearSpan();"/><span id="xfspan"></span></label>
+                        <label for="yForce" id="fy">Y: <input id="yForce" type="number" oninput="clearSpan();"/><span id="yfspan"></span></label>
                         <label for="check"><input id="check3" type="button" value="CHECK" onclick="evalForce()"/>
                       </div>	
                       </div>

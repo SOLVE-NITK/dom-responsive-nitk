@@ -951,7 +951,7 @@ if(screenchanges==0)
       $('#variables').css('width', '100%');
       } else {
       // Apply styles for larger screens
-      $('#variables').css('width', '200%');
+      $('#variables').css('width', '201%');
       }
   
     draw();
@@ -2442,4 +2442,8 @@ function setSpanColor(str, val) {
 	} else if( val == '✔') {
 		$(str).css({'color': 'green'});
 	}
+}
+function validateNumber(input) {
+  // Replace non-numeric characters with empty string
+  input.value = input.value.replace(/[^0-9]/g, '');
 }

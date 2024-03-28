@@ -17,10 +17,7 @@ em:current font size
   #variables{
     width: 200%;
   }
-  .variables-sections{
-    position: relative;
-    left: 30px;
-  }
+
   #commentboxleft1{
     top: -25px;
     margin-left: 185px;
@@ -51,7 +48,7 @@ em:current font size
 }
   #referenceplane {
     position: relative;
-    left: -570px;
+    left: -574px;
   
     
 }
@@ -63,7 +60,7 @@ em:current font size
 
 @media (max-width: 78em){
   #variables{
-    width: 190%;
+    width: 188%;
   }
   #commentboxleft{
     margin-left: -31px;
@@ -152,19 +149,7 @@ em:current font size
   left: -570px;
   
 }
-/* label{
-  position: relative;
-  left: 404px;
-}
 
-.unit{
-  position: relative;
-  left: 565px;
-} */
-.variables-sections{
-  position: relative;
-  left: -10px;
-}
 #commentboxleft1 {
   top: -37px;
   margin-left: 295px;
@@ -178,10 +163,7 @@ em:current font size
     position: relative;
     left: -100px;
   }
-  .variables-sections{
-    position: relative;
-    left: 20px;
-  }
+
   #submitBtn{
     position: relative;
     left: -38px;
@@ -280,7 +262,7 @@ em:current font size
   }
 
   .tool-list span {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .main__task-div:nth-child(4) {
@@ -328,10 +310,7 @@ em:current font size
     top: -380px;
    
   }
-  .variables-sections{
-    position: relative;
-    left: 23px;
-  }
+
   .copytext{
     margin-bottom: 65px;
   }
@@ -382,7 +361,7 @@ em:current font size
   }
 
   .tool-list span {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .cir-tooltip1 {
@@ -401,10 +380,7 @@ em:current font size
     margin-left: 130px;
    
   }
-  .variables-sections{
-    position: relative;
-    left: 25px;
-  }
+
   .copytext{
     margin-bottom: 70px;
   }
@@ -485,10 +461,7 @@ em:current font size
   #simscreen{
     margin-left: 85px;
   }
-  .variables-sections{
-    position: relative;
-    left: 88px;
-  }
+
 
   
   .copytext{
@@ -527,13 +500,7 @@ em:current font size
    margin-left: -17px;
     
   }
-  .variables-sections{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 10px;
-  }
+
   #commentboxleft1{
     
     margin-left: 140px;
@@ -548,13 +515,7 @@ em:current font size
   .canvas__div {
     grid-template-columns: 1fr;
   }
-  .variables-sections{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 51px;
-  }
+
   #commentboxcorrect{
     position: relative;
     left:10px;
@@ -708,12 +669,7 @@ em:current font size
   width: 300px; */
     
 }
-.variables-sections{
- /* display: flex;
- align-items: center;
- justify-content: center; */
- margin-left: -43px;
-}
+
 /* label{
   position: relative;
   left: 150px;
@@ -737,10 +693,7 @@ em:current font size
 }
 
 @media (max-width: 33em){
-  .variables-sections{
-    position: relative;
-    left: 83px;
-  }
+
   #referenceplane {
     margin-left: -23px;
     position: relative;
@@ -764,10 +717,7 @@ em:current font size
 }
 
 @media (max-width: 31em){
-  .variables-sections{
-    position: relative;
-    left: 80px;
-  }
+
   #referenceplane {
     margin-left: -23px;
     position: relative;
@@ -814,18 +764,7 @@ em:current font size
     width: 380px;
     top: -280px;
 }
-  .variables-sections{
-    position: relative;
-    left: 64px;
-  }
-  /* label{
-    position: relative;
-    left: 50px;
-  }
-  .unit{
-    position: relative;
-    left: 250px;
-  } */
+
   #submitBtn{
     position: relative;
     left: -50px;
@@ -840,16 +779,13 @@ em:current font size
 }
 
 @media (max-width: 27em){
-  .variables-sections{
-    position: relative;
-    left: 74px;
-  }
+
   #commentboxleft1{
     top: -25px;
     margin-left: 53px;
   }
   #simscreen{
-    margin-left: -22px;
+    margin-left: -7px;
     width: 100%;
   }
   #referenceplane {
@@ -860,6 +796,11 @@ em:current font size
     height: 25px;
     width: 320px;
     top: -244px;
+}
+
+.var-slider{
+  position: relative;
+  left: 15px;
 }
   /* label{
     position: relative;
@@ -872,7 +813,7 @@ em:current font size
   } */
   #submitBtn{
     position: relative;
-    left: -43px;
+    left: -34px;
   }
   .p{
     margin-bottom: 65px;
@@ -897,10 +838,12 @@ em:current font size
   #variables{
     width: 100%;
   }
-  .variables-sections{
+
+  .var-slider{
     position: relative;
-    left: 74px;
+    left: 40px;
   }
+
   #simscreen{
     margin-left: -20px;
     width: 100%;
@@ -930,15 +873,15 @@ em:current font size
 }
 
 @media (max-width: 23em) {
-  .variables-sections{
-    position: relative;
-    left: 78px;
-  }
+
   label{
     
    position: relative;
    left: 137px;
   }
+
+
+
   #referenceplane {
     margin-left: -24px;
     position: relative;
@@ -948,7 +891,7 @@ em:current font size
     top: -205px;
 }
 #simscreen{
-  margin-left: -20px;
+  margin-left: -10px;
   width: 100%;
 }
   #submitBtn{
@@ -959,12 +902,20 @@ em:current font size
     position: relative;
     left: -32px;
   }
+  .var-slider{
+    width: 120px;
+  }
+
+  .unit{
+    position: absolute;
+    left: 186px;
+  }
+
+
+ 
 }
 @media (max-width: 20em) {
-  .variables-sections{
-    position: relative;
-    left: 62px;
-  }
+
   #commentboxleft1{
     
     left: -13px;
@@ -983,6 +934,7 @@ em:current font size
     margin-bottom: 75px;
     
   }
+
 }
 
 /* 

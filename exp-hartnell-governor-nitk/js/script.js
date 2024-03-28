@@ -477,17 +477,12 @@ var imgId = elem.id;
 if(imgId == "cb1") {
     document.getElementById("imgTitle").innerHTML = "Minimum Position";
     document.getElementById("myImg").src = "./images/minPosition.png";
-    // document.getElementById("myImg").style.height= exptSelected == 0 ?"350px" : "255px";
-    // document.getElementById("myImg").style.width= exptSelected == 0 ?"350px" : "350px";
-    // document.getElementById("imgTitle").style.left= exptSelected == 0 ?"340px" : "100px";
+
 
 } else if(imgId == "cb2") {
     document.getElementById("imgTitle").innerHTML = "Maximum Position";
     document.getElementById("myImg").src = "./images/maxPosition.png";
     console.log("max")
-    // document.getElementById("myImg").style.height= exptSelected == 0 ?"350px" : "255px";
-    // document.getElementById("myImg").style.width= exptSelected == 0 ?"350px" : "355px";
-    // document.getElementById("imgTitle").style.left= exptSelected == 0 ?"340px" : "100px";
 }
 
 }
@@ -497,18 +492,11 @@ function selectPos1(elem){
     if(imgId == "cb11") {
         document.getElementById("imgTitle1").innerHTML = "Minimum Position";
         document.getElementById("myImg1").src = "./images/minPosition.png";
-        console.log("min1")
-        // document.getElementById("myImg").style.height= exptSelected == 0 ?"350px" : "255px";
-        // document.getElementById("myImg").style.width= exptSelected == 0 ?"350px" : "350px";
-        // document.getElementById("imgTitle").style.left= exptSelected == 0 ?"340px" : "100px";
     
     } else if(imgId == "cb21") {
         document.getElementById("imgTitle1").innerHTML = "Maximum Position";
         document.getElementById("myImg1").src = "./images/maxPosition.png";
-        console.log("max1")
-        // document.getElementById("myImg").style.height= exptSelected == 0 ?"350px" : "255px";
-        // document.getElementById("myImg").style.width= exptSelected == 0 ?"350px" : "355px";
-        // document.getElementById("imgTitle").style.left= exptSelected == 0 ?"340px" : "100px";
+      
     }
     
     }
@@ -527,8 +515,6 @@ function setExperiments() {
     document.getElementById("fbd").style.display = "none";
     document.getElementById("minMaxPos").style.display = "none";
     document.getElementById("goToExperiment").style.display = "none";
-    // document.getElementById("exitExperiment").style.display = "none";
-    // document.getElementById("resetExperiment").style.display = "none";
     document.getElementById("startExperiment").style.display = "inline-block";
     document.getElementById("goSimulator").style.display = "inline-block";
     if (mediaQuery4.matches) {
@@ -558,13 +544,7 @@ else
     document.getElementById("goSimulator").style.display = "none";
     document.getElementById("startExperiment").style.display = "none";
 
-    // document.getElementById("myImg").style.top = "-408px";
-
     document.getElementById("myImg1").style.display = "block";
-    // document.getElementById("myImg").style.left= "-87px";
-    // document.getElementById("myIm    g1").style.top= "-408px";
-    // document.getElementById("myImg").style.width= "299px";
-    // document.getElementById("commentboxleft").style.visibility = "hidden";
      document.getElementById("questionsSet").style.display = "block";
      document.getElementById("comments").style.width = "100%";
     document.getElementById("commentboxleft").innerHTML = "<span style='color:green'>Constant Variables</span>:<br> X & Y = 90mm&nbsp;&nbsp;<br>&omega;<sub>1</sub> = 38rad/s &nbsp;&nbsp;<br>&omega;<sub>2</sub> = 42rad/s<br>r= 90mm&nbsp;&nbsp;<br>r<sub>1</sub> = 70mm&nbsp;&nbsp;<br>r<sub>2</sub> = 110mm";
@@ -577,25 +557,13 @@ function selectExperiments() {
     $("#exp").hide();
     if($('#calc').is(':checked'))
     {
-        // document.getElementById("questionsSet").style.display = "block";
-        // document.getElementById("questionsSet").style.backgroundColor= "red";
-        // console.log("left")
-        // document.getElementById("resetExperiment").style.display = "block";
-        // document.getElementById("variables").style.visibility = "visible";
         document.getElementById("fb").style.visibility = "hidden";
-        // document.getElementById("fb").style.left= "200px";
-        // document.getElementById("posControls").style.visibility = "visible";
         document.getElementById("imgTitle").style.visibility = "hidden";
         // document.getElementById("imgTitle").style.left = "100px";
         document.getElementById("imgTitle").innerHTML = "Minimum Position";
         document.getElementById("myImg1").style.display = "block";
         document.getElementById("variables").style.display = "block";
         document.getElementById("canvas-container").style.display = "block";
-        // document.getElementById("myImg").style.height= "255px";
-        // document.getElementById("myImg").style.width= "303px";
-        // document.getElementById("myImg").style.left= "-px";
-        // document.getElementById("myImg").style.visibility = "visible";
-        // document.getElementById("myImg").style.left= "500px";
         document.getElementById("cb1").checked = true;
         document.getElementById("myImg1").src = "./images/minPosition.png";
         randomizeValues();
@@ -605,7 +573,6 @@ function selectExperiments() {
     {
         document.getElementById("commentboxleft").innerHTML = "Identify parts of governor using dropdown";
         document.getElementsByClassName("comment-sections")[0].style.paddingBottom = "95px";
-        // document.getElementsById("exitExperiment")[0].style.paddingBottom = "150px";
 
         document.getElementById("fbd").style.display = "none";
         document.getElementById("fbd").style.display = "none";
@@ -618,10 +585,7 @@ function selectExperiments() {
 
         document.getElementById("resetExperiment").style.display = "none";
          document.getElementById("questionsSet").style.display = "none";
-        // document.getElementById("variables").style.display= "none";
         document.getElementById("canvas-container").style.display = "none";
-        // document.getElementById("commentboxleft").style.display= "none";
-        // document.getElementById("resetExperiment").style.display = "none";
         document.getElementById("partImage").style.display = "block";
         document.getElementById("dropDownSet").style.display = "block";
         if (mediaQuery4.matches) {
@@ -744,18 +708,11 @@ function exitExperiments() {
         document.getElementById("comments").style.width = "100%";
     }
 
-    // document.getElementById("questionsSet").style.display= "none";
-    // document.getElementById("commentboxleft1").style.display= "none";
-    // document.getElementById("commentboxright").style.display= "none";
-    // document.getElementById("canvas-container").style.height= "200px";
     document.getElementById("imgTitle").style.visibility = "hidden";
     document.getElementById("imgTitle").innerHTML = "Minimum Position";
     
     document.getElementById("fb").style.visibility = "hidden";
-    // document.getElementById("posControls").style.visibility = "hidden";
-
-    // document.getElementById("startExperiment").style.display = "inline-block";
-    // document.getElementById("goSimulator").style.display = "inline-block";
+   
     document.getElementById("cb1").checked = true;
     document.getElementById("myImg").src = "./images/minPosition.png";
     $("input:radio[name='expt']").prop('checked', false);
@@ -774,18 +731,10 @@ function goToSimulator() {
     document.getElementById("fbd").style.display = "block";
     document.getElementById("partImage").style.display = "none";
     document.getElementById("minMaxPos").style.display = "block";
-    // document.getElementById("canvas-container").style.display = "block";
-    // document.getElementById("fb").style.left= "340px";
-    // document.getElementById("posControls").style.visibility = "visible";
     document.getElementById("imgTitle").style.visibility = "visible";
     // document.getElementById("imgTitle").style.left = "340px";
     document.getElementById("imgTitle").innerHTML = "Minimum Position";
 
-    // document.getElementById("myImg").style.height= "350px";
-    // document.getElementById("myImg").style.width= "350px";
-    // document.getElementById("myImg").style.left= "255px";
-   
-    // document.getElementById("commentboxleft11").style.display = "none";
     document.getElementById("dropDownSet").style.display = "none";
     document.getElementById("exp").style.display = "none";
     document.getElementById("commentboxleft").innerHTML = "";
@@ -901,10 +850,6 @@ function resetSelect()
     document.getElementById("bevel").selectedIndex = "0";
     document.getElementById("ball").selectedIndex = "0";
     document.getElementById("spring").selectedIndex = "0";
-    // document.getElementById("dropSleeve").style.left = "123px";
-    // document.getElementById("dropBevel").style.left = "45px";
-    // document.getElementById("dropBall").style.left = "78px";
-    // document.getElementById("dropSpring").style.left = "165px";
     ansSpan0.innerHTML = " ";
     ansSpan1.innerHTML = " ";
     ansSpan2.innerHTML = " ";
@@ -921,217 +866,7 @@ function spanHighlight(divTag,ans,ansSpan) {
     document.getElementById(divTag).appendChild(ansSpan);
 }
 
-// old code
-
-
-
-// const draw = function () {
-//   let originalX = setMediaQueries(ctx);
-//   ctx.canvas.width = document.documentElement.clientWidth * scaleX;
-//   ctx.canvas.height = document.documentElement.clientHeight * scaleY;
-//   let ball = {
-//     xpos: beamlength / 10 + originalX + 25,
-//     ypos: 210 + actdisplace(time) / 10,
-//     size: endmass === 0 ? 0 : 15 + endmass / 5,
-//     draw: function () {
-//       ctx.beginPath();
-//       ctx.arc(ball.xpos, ball.ypos, ball.size, 0, 2 * Math.PI, false);
-//       ctx.lineWidth = 3;
-//       ctx.strokeStyle = "brown";
-//       ctx.stroke();
-//       ctx.fillStyle = "brown";
-//       ctx.fill();
-//     },
-//   };
-
-//   function beamdef(y) {
-//     ctx.fillStyle = "blue";
-//     for (let i = 0; i <= beamlength / 10; i++) {
-//       ctx.fillRect(
-//         i + originalX + 25,
-//         ((y * i * i) / 2 / Math.pow(beamlength / 10, 3)) *
-//           ((3 * beamlength) / 10 - i) -
-//           10 +
-//           210,
-//         1,
-//         20
-//       );
-//     }
-
-//     ctx.beginPath();
-//     ctx.arc(
-//       ball.xpos + 1,
-//       ball.ypos,
-//       9.5,
-//       (3 * Math.PI) / 2,
-//       Math.PI / 2,
-//       false
-//     );
-//     ctx.lineWidth = 1;
-//     ctx.strokeStyle = "blue";
-//     ctx.stroke();
-//     ctx.fill();
-//   }
-//   ctx.clearRect(0, 0, canvas.width, canvas.height);
-//   beamdef(ball.ypos - 210);
-//   ctx.fillStyle = "black";
-//   ctx.fillRect(originalX, 105, 25, 200);
-//   ball.draw();
-//   generateGraph();
-// };
-
-// function generateGraph() {
-//   // Graph 1
-//   let graph1X = setMediaQueries(graphctx1);
-//   graphctx1.canvas.width = document.documentElement.clientWidth * scaleX;
-//   graphctx1.canvas.height = document.documentElement.clientHeight * scaleY;
-//   graphctx1.clearRect(0, 0, graphCanvas1.width, graphCanvas1.height);
-//   graphctx1.font = "2rem Comic sans MS";
-//   graphctx1.save();
-//   graphctx1.translate(0, 225);
-//   graphctx1.rotate(-Math.PI / 2);
-//   graphctx1.fillText("Displacement", 0, 15);
-//   graphctx1.restore();
-//   graphctx1.fillText("Time", 150, 350);
-//   graphctx1.beginPath();
-
-//   graphctx1.moveTo(20, 100);
-//   graphctx1.lineTo(20, 350);
-//   graphctx1.moveTo(20, 225);
-//   graphctx1.lineTo(graphCanvas1.width, 225);
-//   graphctx1.strokeStyle = "black";
-//   graphctx1.stroke();
-//   graphctx1.closePath();
-
-//   graphctx1.beginPath();
-//   graphctx1.moveTo(20, 225);
-//   let i = 0;
-//   graphctx1.strokeStyle = "green";
-//   graphctx1.lineWidth = 1;
-//   while (i < graphCanvas1.width) {
-//     graphctx1.lineTo(i + 20, 225 - (0.9 * actdisplace(0.003 * i)) / 5);
-//     graphctx1.moveTo(i + 20, 225 - (0.9 * actdisplace(0.003 * i)) / 5);
-//     i += 0.01;
-//   }
-//   graphctx1.stroke();
-
-//   // Graph 2
-//   let graph2X = setMediaQueries(graphctx2);
-//   graphctx2.canvas.width = document.documentElement.clientWidth * scaleX;
-//   graphctx2.canvas.height = document.documentElement.clientHeight * scaleY;
-//   graphctx2.clearRect(0, 0, graphCanvas2.width, graphCanvas2.height);
-//   graphctx2.font = "2rem Comic sans MS";
-//   graphctx2.beginPath();
-//   graphctx2.strokeStyle = "black";
-//   graphctx2.moveTo(20, 330);
-//   graphctx2.lineTo(20, 135);
-//   graphctx2.moveTo(20, 330);
-//   graphctx2.lineTo(520, 330);
-//   graphctx2.stroke();
-//   graphctx2.save();
-//   graphctx2.translate(10, 345);
-//   graphctx2.rotate(-Math.PI / 2);
-//   graphctx2.fillText("Amplitude", 45, 5);
-//   graphctx2.restore();
-//   graphctx2.fillText("Frequency(rad/s)", 170, 350);
-//   graphctx2.strokeStyle = "#800080";
-//   graphctx2.lineWidth = 1;
-//   graphctx2.moveTo(350, 345);
-//   function amplitude(n) {
-//     return 20 / Math.sqrt(Math.pow(1 - n * n, 2) + Math.pow(2 * 0.05 * n, 2));
-//   }
-//   let j = 0;
-//   graphctx2.beginPath();
-//   while (j < 300) {
-//     graphctx2.lineTo(j + 50, 325 - 0.9 * amplitude(0.01 * j));
-//     graphctx2.moveTo(j + 50, 325 - 0.9 * amplitude(0.01 * j));
-//     j += 0.01;
-//   }
-//   graphctx2.stroke();
-//   graphctx2.beginPath();
-//   graphctx2.strokeStyle = "green";
-//   graphctx2.moveTo(150, 360);
-//   graphctx2.lineTo(150, 100);
-//   graphctx2.stroke();
-//   graphctx2.font = "2rem Comic sans MS";
-//   graphctx2.fillText("\u03C9d= " + wd.toFixed(3) + "rad/s", 260, 300);
-// }
-
-// function plotgraph() {
-//   const graphDiv = document.querySelectorAll(".graph-div");
-//   console.log(graphDiv);
-//   graphDiv.forEach((graph) => {
-//     graph.classList.toggle("display-hide");
-//   });
-//   generateGraph();
-//   graphDiv[0].scrollIntoView({
-//     behavior: "smooth",
-//   });
-// }
-
-// window.addEventListener("load", varinit);
-
-// const selectSection = function () {
-//   otherSec.classList.remove("display-flex");
-//   otherSec.classList.add("display-hide");
-//   let value = sections.value;
-//   if (value != 6) {
-//     sectionImg.src = beamInfo[value].path;
-//     const infos = Object.entries(beamInfo[value]);
-//     sectionTooltip.innerHTML = "";
-//     for (const [key, value] of infos.slice(0, -3)) {
-//       const text = `${key}:${value}, `;
-//       sectionTooltip.insertAdjacentHTML("beforeend", text);
-//     }
-//     for (const [key, value] of infos) {
-//       if (key == "A") {
-//         A = value;
-//       }
-//       if (key == "I") {
-//         I = value;
-//       }
-//     }
-//     varupdate();
-//   } else {
-//     otherSec.classList.add("display-flex");
-//     otherSec.classList.remove("display-hide");
-//     sectionImg.src = "images/crossOth.PNG";
-//     A = 0.01;
-//     I = 0.01;
-//     sectionTooltip.innerHTML = "";
-//     sectionTooltip.innerHTML = `Area = ${A} m<sup>2</sup>, I = ${I} m<sup>4</sup>`;
-//     $("#CsArea").spinner({
-//       spin: function (event, ui) {
-//         A = ui.value;
-//         I = $("#Ivalue").spinner("value");
-//         sectionTooltip.innerHTML = `Area = ${A} m<sup>2</sup>, I = ${I} m<sup>4</sup>`;
-//       },
-//     });
-//     $("#Ivalue").spinner({
-//       spin: function (event, ui) {
-//         I = ui.value;
-//         A = $("#CsArea").spinner("value");
-//         sectionTooltip.innerHTML = `Area = ${A} m<sup>2</sup>, I = ${I} m<sup>4</sup>`;
-//       },
-//     });
-//   }
-// };
-
-// sections.addEventListener("change", selectSection);
-// const selectMaterial = function () {
-//   let value = materials.value;
-//   const infos = Object.entries(matInfo[value]);
-//   cirTooltip.innerHTML = "";
-//   for (const [key, value] of infos) {
-//     const text = `${key}:${value}, `;
-//     if (key == "E") {
-//       E = +value;
-//     }
-//     if (key == "rho") {
-//       rho = +value;
-//     }
-//     cirTooltip.insertAdjacentHTML("beforeend", text);
-//   }
-//   varupdate();
-// };
-// materials.addEventListener("change", selectMaterial);
+function validateNumber(input) {
+    // Replace non-numeric characters with empty string
+    input.value = input.value.replace(/[^0-9]/g, '');
+  }

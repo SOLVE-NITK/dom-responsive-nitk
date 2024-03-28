@@ -150,7 +150,7 @@ em:current font size
     flex-direction: row;
     width: 100%;
     backdrop-filter: blur(10rem);
-    z-index: 101;
+    z-index: 200;
     justify-content: space-evenly;
     border-radius: 0;
     scroll-behavior: auto;
@@ -180,7 +180,7 @@ em:current font size
     margin-bottom: 6rem;
   }
   .tool-list span {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .canvas {
     display: block;
@@ -272,7 +272,7 @@ em:current font size
   div#commentboxleft {
     left: 10px;
     top: 520px;
-    font-size: 18px;
+    font-size: 15px;
     
   }
   div#commentboxright {
@@ -326,7 +326,15 @@ em:current font size
     width: 80px;
     font-size: 12px;
     text-align: center;
-    left: 300px;
+    left: 160px;
+  }
+  #datatable4{
+    position:relative;
+    width: 80px;
+    font-size: 10px;
+    text-align: center;
+ top:2rem;
+    left:140px;
   }
   
 }
@@ -362,6 +370,7 @@ em:current font size
   .cross-img {
     width: 60%;
   }
+  
   .canvas {
     display: block;
     width: 100%;
@@ -379,8 +388,16 @@ em:current font size
     width: 80px;
     font-size: 12px;
     text-align: center;
-    left: 300px;
+    left: 148px;
   }
+  /* #datatable1{
+    position:relative;
+    width: 80px;
+    font-size: 12px;
+    text-align: center;
+    top: 6rem;
+    left:9rem;
+  } */
   #legendicon {
     background-image: url("../images/legendicon.png");
     position: absolute;
@@ -446,7 +463,21 @@ em:current font size
   }
  
 }
+@media (max-width :660px) {
+  div#experiments{
+    left: 2rem;
+    width: 30rem;
+  }
+  #datatable4{
+    position:relative;
+    width: 80px;
+    font-size: 10px;
+    text-align: center;
+ top:2rem;
+    left:140px;
+  }
 
+}
 /* **************************** */
 /* Below 540px (Smaller Tablets) */
 /* **************************** */
@@ -473,6 +504,8 @@ em:current font size
   }
   .tool-menu {
     gap: 1.5rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1rem;
   }
   .task-title {
     font-size: 1.7rem;
@@ -495,6 +528,7 @@ em:current font size
   }
   .sidebar {
     border-radius: 0;
+
   }
   .canvas {
     display: block;
@@ -549,7 +583,7 @@ canvas#zoomScreen {
     font-size: 10px;
     text-align: center;
     top: 2rem;
-    left:22rem;
+    left:15rem;
   }
   .datatable table {
     border: 1px solid #000011;

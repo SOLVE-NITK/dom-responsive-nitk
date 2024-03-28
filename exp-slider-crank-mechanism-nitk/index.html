@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SOLVE - Mechanics of Machines Lab - Slider Crank Mechanism</title>
+    <title>SOLVE-DOM-Dynamic Analysis of Slider Crank Mechanism</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -178,9 +178,9 @@
     <fieldset>
     <legend id="expTitle">Choose one of the experiments</legend>
       <ul type="none">
-        <li><input type="radio" id = "acc" name="expt" value="acc" autocomplete="off" >Experiment on Acceleration of C.G</li>
-        <li><input type="radio" id = "offset" name="expt" value="offset" autocomplete="off">Experiment on Offset Analysis </li>
-        <li><input type="radio" id = "force" name="expt" value="force" autocomplete="off">Experiment on Force </li>
+        <li><input type="radio" id = "acc" name="expt" value="acc" autocomplete="off" oninput="validateNumber(this)">Experiment on Acceleration of C.G</li>
+        <li><input type="radio" id = "offset" name="expt" value="offset" autocomplete="off"oninput="validateNumber(this)">Experiment on Offset Analysis </li>
+        <li><input type="radio" id = "force" name="expt" value="force" autocomplete="off"oninput="validateNumber(this)">Experiment on Force </li>
       </ul>
     </fieldset>
     </div>
@@ -193,9 +193,9 @@
         </select>
       </label>
       <div id="axisPos" class="fontClass">
-        <label for="xAxis" id="lx">X: <input id="xAxis" type="text" oninput="clearSpan();"/><span></span></label>
-        <label for="yAxis" id="ly">Y: <input id="yAxis" type="text" oninput="clearSpan();"/><span></span></label>
-        <label for="check"><input id="check1" type="button" value="CHECK" onclick="evalAcceleration()"/>
+        <label for="xAxis" id="lx">X: <input id="xAxis" type="text" oninput="clearSpan(), validateNumber(this);"/><span></span></label>
+        <label for="yAxis" id="ly">Y: <input id="yAxis" type="text" oninput="clearSpan(),validateNumber(this);"/><span></span></label>
+        <label for="check"><input id="check1" type="button" value="CHECK" onclick="evalAcceleration()"oninput="validateNumber(this)"/>
       </div>	
       </div>
   <!-- **************************************** -->
@@ -224,7 +224,7 @@
 	</select>
 </label>
 <div id="offLink" class="fontClass">
-	<label for="link" id="linkLable" class="fontClass">Offset: <input id="link" type="text" oninput="clearSpan();"/><span id="linkspan">ss</span></label>
+	<label for="link" id="linkLable" class="fontClass">Offset: <input id="link" type="text" oninput="clearSpan(),validateNumber(this);"/><span id="linkspan">ss</span></label>
 	<label for="check"><input id="check2" type="button" value="CHECK" onclick="evalOffset()"/>
 </div>	
 </div>
@@ -241,8 +241,8 @@
     </select>
   </label>
   <div id="forcAxisPos" class="fontClass">
-    <label for="xForce" id="fx">X: <input id="xForce" type="text" oninput="clearSpan();"/><span id="xfspan"></span></label>
-    <label for="yForce" id="fy">Y: <input id="yForce" type="text" oninput="clearSpan();"/><span id="yfspan"></span></label>
+    <label for="xForce" id="fx">X: <input id="xForce" type="text" oninput="clearSpan(),validateNumber(this);"/><span id="xfspan"></span></label>
+    <label for="yForce" id="fy">Y: <input id="yForce" type="text" oninput="clearSpan(),validateNumber(this);"/><span id="yfspan"></span></label>
     <label for="check3"><input id="check3" type="button" value="CHECK" onclick="evalForce()"/>
   </div>	
   </div>
@@ -264,7 +264,7 @@
                   <div id="linklenght1" class="var-div">
                     <div class="input-container">
                     <label for="r2spinner"><p title="Link Length">r</p></label>
-                    <input class="var-spinner" id="r2spinner" name="value" />
+                    <input class="var-spinner" id="r2spinner" name="value" oninput="validateNumber(this)"/>
                     <span class="mm">mm</span> 
                     </div>
                     <div class="var-slider" id="r2slider"></div>
@@ -272,7 +272,7 @@
                     <div id="linklenght2" class="var-div">
                       <div class="input-container">
                       <label for="r3spinner"><p title="Link Length">l</p></label>
-                      <input class="var-spinner" id="r3spinner" name="value" />
+                      <input class="var-spinner" id="r3spinner" name="value"oninput="validateNumber(this)" />
                       <span class="mm">mm</span> 
                       </div>
                       <div class="var-slider" id="r3slider"></div>
@@ -281,7 +281,7 @@
                     <div id="linkmass" class="var-div">
                       <div class="input-container">
                       <label for="m2spinner"><p title="Link mass">m2</p></label>
-                      <input class="var-spinner" id="m2spinner" name="value" />
+                      <input class="var-spinner" id="m2spinner" name="value" oninput="validateNumber(this)"/>
                       <span class="mm">kg</span> 
                       </div>
                       <div class="var-slider" id="m2slider"></div>
@@ -289,7 +289,7 @@
                       <div id="linkmass1" class="var-div">
                         <div class="input-container">
                         <label for="m3spinner"><p title="Link mass">m3</p></label>
-                        <input class="var-spinner" id="m3spinner" name="value" />
+                        <input class="var-spinner" id="m3spinner" name="value" oninput="validateNumber(this)"/>
                         <span class="mm">kg</span> 
                         </div>
                         <div class="var-slider" id="m3slider"></div>
@@ -297,7 +297,7 @@
                         <div id="linkmass2" class="var-div">
                           <div class="input-container">
                           <label for="m4spinner"><p title="Link mass">m4</p></label>
-                          <input class="var-spinner" id="m4spinner" name="value" />
+                          <input class="var-spinner" id="m4spinner" name="value"oninput="validateNumber(this)" />
                           <span class="mm">kg</span> 
                           </div>
                           <div class="var-slider" id="m4slider"></div>
@@ -305,7 +305,7 @@
                           <div id="ex_force_x" class="var-div">
                             <div class="input-container">
                             <label for="fpxspinner"><p title="Link mass">fpx</p></label>
-                            <input class="var-spinner" id="fpxspinner" name="value" />
+                            <input class="var-spinner" id="fpxspinner" name="value"oninput="validateNumber(this)" />
                             <span class="mm">N</span> 
                             </div>
                             <div class="var-slider" id="fpxslider"></div>
@@ -313,7 +313,7 @@
                             <div id="ex_force_y" class="var-div">
                               <div class="input-container">
                               <label for="fpyspinner"><p title="Link mass">fpy</p></label>
-                              <input class="var-spinner" id="fpyspinner" name="value" />
+                              <input class="var-spinner" id="fpyspinner" name="value" oninput="validateNumber(this)"/>
                               <span class="mm">N</span> 
                               </div>
                               <div class="var-slider" id="fpyslider"></div>
@@ -322,8 +322,8 @@
                     <div class="var-div" id = "theta2set">
                       <div class="input-container">
                       <label for="theta2spinner"><p title="Link Length">&theta;<sub>2</sub></p></label>
-                      <input class="var-spinner" id="theta2spinner" name="value" />
-                      <span class="mm1">(&deg;) </span> 
+                      <input class="var-spinner" id="theta2spinner" name="value"oninput="validateNumber(this)" />
+                      <span class="mm1">&deg; </span> 
                       </div>
                       <div class="var-slider" id="theta2slider"></div>
                       </div>
@@ -332,8 +332,8 @@
                       <div class="var-div" id = "omega2set">
                         <div class="input-container">
                         <label for="omega2spinner"><p title="Link Length">&omega;<sub>2</sub></p></label>
-                        <input class="var-spinner" id="omega2spinner" name="value" />
-                        <span class="mm">(rad/s)</span>
+                        <input class="var-spinner" id="omega2spinner" name="value" oninput="validateNumber(this)"/>
+                        <span class="mm">rad/s</span>
                       </div>
                         <div class="var-slider" id="omega2slider"></div>
                      

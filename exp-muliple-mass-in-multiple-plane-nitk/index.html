@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SOLVE-Dynamics of Machine Lab-Balancing of Multiple Mass in Multiple Plane</title>
+  <title>SOLVE-DOM-Balancing of Multiple Mass in Multiple Plane</title>
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> -->
@@ -66,7 +66,7 @@
             </svg></a>
           <span>Variables</span>
         </li>
-        <li class="tool-list">
+        <li class="tool-list" title="Play/Pause">
           <img id="playpausebutton" onclick="simstate()" src="images/bluepausedull.svg" alt="" class="icons" />
           <span class="playPause">Pause</span>
         </li>
@@ -150,7 +150,7 @@
               </div>
               <div id="tt1" class="var-div">
                 <div class="input-container">
-                  <label for="theta1spinner">theta1 </label>
+                  <label for="theta1spinner" >theta1 </label>
                   <!-- <span class="moveInput"> -->
                   <input class="var-spinner" id="theta1spinner" disabled="disabled"
                     onkeypress="return isNumberKey(event)"></input>
@@ -231,7 +231,7 @@
               </div>
 
               <div id="tta" class="var-div" style="display: none;">
-                <div class="input-container">
+                <div class="input-container thetaa">
                   <label for="thetaaspinner">thetaa </label>
                   <!-- <span class="moveInput"> -->
                   <input class="var-spinner" id="thetaaspinner" disabled="disabled"
@@ -257,12 +257,14 @@
 
               <div id="ttb" class="var-div" style="display: none;">
                 <div class="input-container">
+                  
                   <label for="thetabspinner">thetab </label>
                   <!-- <span class="moveInput"> -->
                   <input class="var-spinner" id="thetabspinner" disabled="disabled"
                     onkeypress="return isNumberKey(event)"></input>
                   <!-- </span> -->
                   <span class="unit">deg</span>
+                
                 </div>
                 <div class="var-slider" id="thetabslider"></div>
               </div>

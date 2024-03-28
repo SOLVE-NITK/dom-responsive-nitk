@@ -175,7 +175,7 @@ em:current font size
     margin-bottom: 6rem;
   }
   .tool-list span {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .canvas {
     display: block;
@@ -217,7 +217,7 @@ em:current font size
     left:400px;
     top: 520px;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     
   }
   /* .footer p{
@@ -283,7 +283,7 @@ em:current font size
     left:400px;
     top: 520px;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     
   }
   #legendicon {
@@ -304,15 +304,7 @@ em:current font size
     margin-top: 74px;
      
    }
-  /* #variables{
-    width: 100%;
-  } */
-  /* .tool-list span {
-    font-size: 1.6rem;
-  } */
-  /* .footer p{
-    margin-bottom: 54px;
-  } */
+ 
   
 }
 
@@ -420,7 +412,7 @@ em:current font size
     left:10px;
     top: 650px;
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
     
   }
   div#newComment {
@@ -461,10 +453,12 @@ em:current font size
 /* **************************** */
 @media (max-width: 34em) {
   .container {
-    padding: 0.5rem;
+    padding: 0.5 0 0 5px;
     gap: 1rem;
   }
-
+  .main__task-div:nth-child(4) {
+    margin-bottom: 5rem;
+  }
   .title-div h1 {
     padding: 0.2rem;  
 
@@ -501,6 +495,7 @@ em:current font size
   }
   .main-section {
     gap: 0.5rem;
+    width: 101%;
   }
   .sidebar {
     border-radius: 0;

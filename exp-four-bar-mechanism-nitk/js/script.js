@@ -1203,7 +1203,7 @@ if(screenchanges==3)
   $('#tabchangeforward').show(); 
   $('#tabchangebackward').show();
   $('#linkings').show(); 
-  document.getElementById("screen3").innerHTML = "Respective x and y components<br>of forces in datatable";
+  document.getElementById("screen3").innerHTML = "Respective x and y<br> components<br>of forces in datatable";
   document.getElementById('commentboxright').innerHTML = "";
 	
 

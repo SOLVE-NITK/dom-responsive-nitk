@@ -429,7 +429,7 @@ h1 {
 }
 #commentboxleft {
   position: relative;
-    left: 16px;
+    left: 2px;
     top: -37px;
     margin-bottom: -40px;
     width: 288px;
@@ -518,6 +518,8 @@ div#commentboxright
   color: var(--clr-text-clr);
   border: none;
   cursor: pointer;
+  position: relative;
+    top: 10px;
 }
 #startExperiment {
   font-size: 1.3rem;
@@ -532,6 +534,7 @@ div#commentboxright
   color: var(--clr-text-clr);
   border: none;
   cursor: pointer;
+  margin-top: 30px;
 }
 #exitExperiment {
   font-size: 1.3rem;
@@ -546,6 +549,8 @@ div#commentboxright
   color: var(--clr-text-clr);
   border: none;
   cursor: pointer;
+  position: relative;
+    width: 12rem;
 }
 #goSimulator {
   font-size: 1.3rem;
@@ -561,6 +566,7 @@ div#commentboxright
   color: var(--clr-text-clr);
   border: none;
   cursor: pointer;
+  margin-top: 21px;
 }
 #resetExperiment {
   font-size: 1.3rem;
@@ -576,6 +582,8 @@ div#commentboxright
   color: var(--clr-text-clr);
   border: none;
   cursor: pointer;
+  position: relative;
+    top: 14px;
 }
 #partTitle{
   position: absolute;

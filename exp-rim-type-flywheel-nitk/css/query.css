@@ -403,7 +403,8 @@ em:current font size
 /* **************************** */
 @media (max-width: 48em) {
   .container {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    padding: 0rem 0rem 0.5rem 0.5rem;
     gap: 1rem;
   }
   .title-div h1 {
@@ -529,7 +530,8 @@ em:current font size
 /* **************************** */
 @media (max-width: 44em) {
   .container {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    padding: 0rem 0rem 0.5rem 0.5rem;
     gap: 1rem;
   }
   .title-div h1 {
@@ -658,7 +660,8 @@ em:current font size
 /* **************************** */
 @media (max-width: 34em) {
   .container {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    padding: 0rem 0rem 0.5rem 0.5rem;
     gap: 1rem;
   }
   .title-div h1 {
@@ -790,7 +793,8 @@ em:current font size
 
 @media (max-width: 28em) {
   .container {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    padding: 0rem 0rem 0.5rem 0.5rem;
     gap: 1rem;
   }
   .title-div h1 {
@@ -914,7 +918,8 @@ em:current font size
 
 @media (max-width: 24em) {
   .container {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    padding: 0rem 0rem 0.5rem 0.5rem;
     gap: 1rem;
   }
   .title-div h1 {
@@ -1041,7 +1046,8 @@ em:current font size
   
 @media (max-width: 20em) {
   .container {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    padding: 0rem 0rem 0.5rem 0.5rem;
     gap: 1rem;
   }
   .title-div h1 {

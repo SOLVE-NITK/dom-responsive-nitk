@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SOLVE - Dynamics of Machines Lab - Hartnell Governor</title>
+    <title>SOLVE - DOM - Hartnell Governor</title>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> -->
@@ -219,15 +219,15 @@
               <!-- Questions Division -->
               <div id="questionsSet" class="fontClass" style="display: none;">
                 <div id="qStiffness" class="questionDivision">
-                  <label for="calcStiffness">Stiffness of Spring(N/mm): <input id="calcStiffness" style="width: 71px;" type="text"  autocomplete="off" value="" oninput="resetValues(this);"><span id="sspan"></span></label>
+                  <label for="calcStiffness">Stiffness of Spring(N/mm): <input id="calcStiffness" oninput="validateNumber(this)" style="width: 71px;" type="text"  autocomplete="off" value="" oninput="resetValues(this);"><span id="sspan"></span></label>
                   <label for="check1"><input id="check1" type="button" value="CHECK" onclick="evalStiffness()"/>
                 </div>
                 <div id="qRadius" class="questionDivision">
-                  <label for="calcRadius">Radius of Rotation(mm): <input id="calcRadius" type="text" style="width: 87px;" autocomplete="off" value="" oninput="resetValues(this);"><span id="rspan"></span></label>
+                  <label for="calcRadius">Radius of Rotation(mm): <input id="calcRadius" oninput="validateNumber(this)" type="text" style="width: 87px;" autocomplete="off" value="" oninput="resetValues(this);"><span id="rspan"></span></label>
                   <label for="check3"><input id="check3" type="button" value="CHECK" onclick="evalRadius()"/>
                 </div>
                 <div id="qLift" class="questionDivision">
-                  <label for="calcLift">Lift of Sleeve(mm): <input id="calcLift" type="text" style="width: 130px;" autocomplete="off" value="" oninput="resetValues(this);"><span id="lspan"></span></label>
+                  <label for="calcLift">Lift of Sleeve(mm): <input id="calcLift" oninput="validateNumber(this)" type="text" style="width: 130px;" autocomplete="off" value="" oninput="resetValues(this);"><span id="lspan"></span></label>
                   <label for="check2"><input id="check2" type="button" value="CHECK" onclick="evalLift()"/>
                 </div>
               </div>
@@ -370,7 +370,7 @@
                 <div class="var-div">
                   <div id = "mset" class="variable">
                     <div class="varname"><p title='Input mass'>m</p>
-                    <input id="mspinner"></input></div>
+                    <input id="mspinner" oninput="validateNumber(this)"></input></div>
                     <span class="unit">kg</span>
                     <div id="mslider"></div>
                    
@@ -381,7 +381,7 @@
                 <div class="var-div">
                   <div id = "nset" class="variable">
                     <div class="varname"><p title='Input Angular Velocity'>n</p>
-                    <input id="nspinner"></input></div>
+                    <input id="nspinner" oninput="validateNumber(this)"></input></div>
                     <span class="unit">rpm</span>
                     <div id="nslider"></div>
                   </div>

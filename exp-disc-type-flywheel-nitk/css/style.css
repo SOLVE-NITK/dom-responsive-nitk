@@ -75,7 +75,8 @@ h1 {
   text-transform: uppercase;
 }
 .container {
-  padding: 0 0 0.5rem 0.5rem;
+  /* padding: 1rem 1.2rem 2rem 0.5rem; */
+  padding: 0rem 0rem 0.5rem 0.5rem;
   display: flex;
   flex-direction: row;
   background-color: var(--clr-container-clr);
